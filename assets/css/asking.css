@@ -10,6 +10,15 @@
     background-color: #215644;
     color: #fff;
   }
+  .call-wrap>p{
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 2px;
+  }
+  .call-icon{
+    font-size: 1.2rem;
+    margin-bottom: 13px;
+  }
   .asking-main{
     padding: 20px 0 20px 0;
     background-color: white;
