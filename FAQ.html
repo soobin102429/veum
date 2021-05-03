@@ -39,11 +39,11 @@
             <li><a class="nav-link scrollto" href="#portfolio">Customized Diet</a></li>
             <!-- <li><a class="nav-link scrollto" href="#team">Customer Service</a></li> -->
             <!-- <li><a href="blog.html">Blog</a></li> -->
-            <li class="dropdown"><a href="FAQ.html"><span>Customer Service</span> <i class="bi bi-chevron-down"></i></a>
+            <li class="dropdown"><a href="#"><span>Customer Service</span> <i class="bi bi-chevron-down"></i></a>
                 <ul>
-                <li><a href="#">F&Q</a></li>
+                <li><a href="FAQ.html">F&Q</a></li>
                 <li><a href="#">공지사항</a></li>
-                <li><a href="#">문의하기</a></li>
+                <li><a href="qna.html">문의하기</a></li>
                 </ul>
             </li>
             <!-- <li><a class="nav-link scrollto" href="#contact">Contact</a></li> -->
@@ -57,11 +57,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center mx-auto">
-                    <h1 class="mb-3">도움이 필요하신가요?</h1>
+                    <h1 class="mb-4">도움이 필요하신가요?</h1>
                     <h5>평일 9시 ~ 19시</h5>
                 </div>
             </div>
-            <div class="row text-center d-flex align-content-center mt-4">
+            <div class="row text-center d-lg-flex align-content-center mt-5 sns-call-wrap">
                     <div class="col-4 call-wrap">
                         <i class="fas fa-phone-alt call-icon"></i>
                         <p>전화상담</p>
@@ -78,32 +78,41 @@
                     <p>wofhddl1024</p>
                 </div>
             </div>
-        </div>
+            <div class="row text-center mt-5 sns-call-wrap-mobile">
+                <div class="d-flex align-content-center justify-content-center">
+                  <div class="btn-call col-6 ">
+                    <i class="fas fa-phone-alt call-icon-mobile"></i>&nbsp;&nbsp;<span>031-981-7828</span>
+                  </div>
+                  <div class="btn-call col-6">
+                    <i class="fas fa-comment call-icon-mobile"></i>&nbsp;&nbsp;<span>wofhddl1024</span>
+                  </div>
+                </div>
+          </div>
+      </div>
+      </div>
     </div>
     <div class="asking-main">
-        <section id="asking">
+        <div id="asking">
             <div class="container">
-                <div class="row">
-                    <div class="col-12 text-center align-items-center faq-asking">
-                        <a class="getstarted" href="#">정기구독</a>
-                        <a class="getstarted" href="#">회원정보</a>
-                        <a class="getstarted" href="#">주문 및 배송</a>
-                        <a class="getstarted" href="#">결제</a>
-                        <a class="getstarted" href="#">반품 및 환불</a>
-                        <a class="getstarted" href="#">서비스 및 기타</a>
-                    </div>
+                <div class="row text-center align-items-center faq-asking mx-auto justify-content-center d-lg-flex" id="faq-asking-btn">
+                    <a class="asking-btn asking-btn-1 asking-active" href="#" onclick="return false">정기구독</a>
+                    <a class="asking-btn asking-btn-2" href="#" onclick="return false">회원정보</a>
+                    <a class="asking-btn asking-btn-3" href="#" onclick="return false">주문 및 배송</a>
+                    <a class="asking-btn asking-btn-4" href="#" onclick="return false">결제</a>
+                    <a class="asking-btn asking-btn-5" href="#" onclick="return false">반품 및 환불</a>
+                    <a class="asking-btn asking-btn-6" href="#" onclick="return false">서비스 및 기타</a>
                 </div>
             </div>
-        </section>
+        </div>
 
         <section id="faq" class="faq">
 
             <div class="container" data-aos="fade-up">
               <div class="row faq-1-list">
-                <div class="section-header">
+                <!-- <div class="section-header">
                     <h2>F.A.Q</h2>
                     <p>정기구독</p>
-                </div>
+                </div> -->
                 <!-- F.A.Q List 1-->
                 <div class="faq-subheader_first">
                     <h4 class="faq-subheading">정지 및 해지</h4>
@@ -282,14 +291,12 @@
               </div>
               <!-- 정기구독 end -->
               <div class="row faq-2-list">
-                <div class="section-header">
+                <!-- <div class="section-header">
                     <h2>F.A.Q</h2>
                     <p>회원정보</p>
-                </div>
-                <div class="col-lg-12">
-      
+                </div> -->
                   <!-- F.A.Q List 2-->
-                  <div class="faq-subheader">
+                  <div class="faq-subheader_first">
                     <h4 class="faq-subheading">회원정보</h4>
                   </div>
                   <div class="accordion accordion-flush" id="faqlist2">
@@ -398,17 +405,15 @@
                           </div>
                         </div>
                     </div>
-      
-                  </div>
                 </div>
       
               </div>
               <!-- 회원정보 end -->
               <div class="row faq-3-list">
-                <div class="section-header">
+                <!-- <div class="section-header">
                     <h2>F.A.Q</h2>
                     <p>주문 및 배송</p>
-                </div>
+                </div> -->
                 <!-- F.A.Q List 3-->
                 <div class="faq-subheader_first">
                     <h4 class="faq-subheading">주문</h4>
@@ -573,13 +578,13 @@
               </div>
               <!-- 주문 및 배송 end -->
               <div class="row faq-4-list">
-                <div class="section-header">
+                <!-- <div class="section-header">
                     <h2>F.A.Q</h2>
                     <p>결제</p>
-                </div>
+                </div> -->
                 <div class="col-lg-12">
                   <!-- F.A.Q List 4-->
-                  <div class="faq-subheader">
+                  <div class="faq-subheader_first">
                     <h4 class="faq-subheading">결제</h4>
                   </div>
                   <div class="accordion accordion-flush" id="faqlist7">
@@ -690,10 +695,10 @@
               </div>
               <!-- 결제 end -->
               <div class="row faq-5-list">
-                <div class="section-header">
+                <!-- <div class="section-header">
                     <h2>F.A.Q</h2>
                     <p>반품 및 환불</p>
-                </div>
+                </div> -->
                 <!-- F.A.Q List 5-->
                 <div class="faq-subheader_first">
                     <h4 class="faq-subheading">교환 및 반품</h4>
@@ -777,14 +782,14 @@
               </div>
               <!-- 반품 및 환불 end -->
               <div class="row faq-6-list">
-                <div class="section-header">
+                <!-- <div class="section-header">
                     <h2>F.A.Q</h2>
                     <p>서비스 및 기타</p>
-                </div>
+                </div> -->
                 <div class="col-lg-12">
       
                   <!-- F.A.Q List 2-->
-                  <div class="faq-subheader">
+                  <div class="faq-subheader_first">
                     <h4 class="faq-subheading">서비스 및 기타</h4>
                   </div>
                   <div class="accordion accordion-flush" id="faqlist10">
@@ -884,7 +889,7 @@
         </section><!-- End F.A.Q Section -->
 
     </div>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
     <script src="assets/vendor/aos/aos.js"></script>
     <script src="assets/vendor/php-email-form/validate.js"></script>
@@ -895,5 +900,6 @@
     
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/asking.js"></script>
 </body>
 </html>

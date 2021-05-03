@@ -3,42 +3,96 @@
 /* import-end
 *--------------------------------------------------------------
 */
+
+
+/* FAQ html Start
+*--------------------------------------------------------------
+===================================================*/
   .asking-header{
     margin-top: 100px;
     width: 100%;
-    padding: 50px 0;
+    padding: 65px 0;
     background-color: #215644;
     color: #fff;
+  }
+  .sns-call-wrap{
+    padding: 0 250px;
+  }
+  .call-icon{
+    font-size: 1.2rem;
+    margin-bottom: 13px;
   }
   .call-wrap>p{
     font-size: 14px;
     margin-top: 0;
     margin-bottom: 2px;
   }
-  .call-icon{
-    font-size: 1.2rem;
-    margin-bottom: 13px;
+  /* pc-call-wrap end */
+  .sns-call-wrap-mobile{
+    display: none;
   }
+  .btn-call{
+    border-radius: 8px;
+    border: 1px white solid;
+    width: 125px;
+    height: 42px;
+    line-height: 42px;
+    font-size: 13px;
+  }
+  .btn-call:first-child{
+    margin-right: 15px;
+  }
+  .call-icon-mobile{
+    font-size: 13px;
+  }
+  /* mobile-end */
   .asking-main{
     padding: 20px 0 20px 0;
     background-color: white;
   }
-  .getstarted {
-    background: #215644;
-    padding: 8px 20px;
-    margin-left: 30px;
-    border-radius: 30px;
-    color: #fff;
+  #asking{
+    margin-top: 60px;
   }
-  
- .getstarted:hover, .getstarted:active{
+  .asking-btn {
+    background-color: white;
+    color: #333;
+    width: 125px;
+    height: 45px;
+    line-height: 45px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    font-size: 1rem;
+  }
+  .asking-btn:hover{
+    color: #333;
+  }
+ .asking-active, .asking-active:hover{
     color: #fff;
     background: #215644;
+    border: 1px solid #215644;
     box-shadow: 0 14px 26px -12px rgb(33 86 68 / 42%), 0 4px 23px 0px rgb(0 0 0 / 12%), 0 8px 10px -5px rgb(33 86 68 / 20%);
+  }
+  .faq-2-list,.faq-3-list,.faq-4-list,.faq-5-list,.faq-6-list{
+    display: none;
+  }
+  @media (max-width: 992px) {
+    .sns-call-wrap{
+      display: none;
+    }
+    .sns-call-wrap-mobile{
+      display: block;
+    }
+    .asking-btn {
+      width: 167px;
+      height: 45px;
+   }
   }
 /* asking-btn-end
 *--------------------------------------------------------------
 */
+
 /* # F.A.Q
 --------------------------------------------------------------*/ 
 .faq .accordion-collapse {
@@ -76,4 +130,37 @@
   color: #215644;
 }
 
-/*--------------------------------------------------------------
+/* 
+--------------------------------------------------------------
+FAQ html end 
+---------------------------------------------------------------
+ */
+
+/* 
+--------------------------------------------------------------
+qna html Start 
+---------------------------------------------------------------
+ */
+#qna{
+  padding-top: 200px;
+}
+.qna-for{
+  width: 100px;
+  height: 50px;
+}
+.qna-select{
+  width: 150px;
+  font-size: 0.9rem;
+}
+.qna-title{
+  width: 200px;
+}
+.qna-submit{
+  padding: 9px 50px;
+  background: #215644;
+  color: #fff;
+  border: 1px solid #215644;
+}
+.qna-submit:hover{
+  box-shadow: 0 14px 26px -12px rgb(33 86 68 / 42%), 0 4px 23px 0px rgb(0 0 0 / 12%), 0 8px 10px -5px rgb(33 86 68 / 20%);
+}
