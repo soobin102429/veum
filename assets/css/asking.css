@@ -68,6 +68,9 @@
   .asking-btn:hover{
     color: #333;
   }
+  .sns-call-white{
+    color: #fff;
+  }
  .asking-active, .asking-active:hover{
     color: #fff;
     background: #215644;
@@ -76,6 +79,16 @@
   }
   .faq-2-list,.faq-3-list,.faq-4-list,.faq-5-list,.faq-6-list{
     display: none;
+  }
+  @media (max-width: 1091px){
+    .asking-btn {
+      width: 145px;
+      height: 45px;
+      line-height: 45px;
+      margin-right: 8px;
+      margin-bottom: 8px;
+      font-size: 1rem;
+    }
   }
   @media (max-width: 992px) {
     .sns-call-wrap{
@@ -88,6 +101,35 @@
       width: 167px;
       height: 45px;
    }
+   .asking-btn {
+    width: 168px;
+    height: 45px;
+    line-height: 45px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+  }
+  @media (max-width:415px){
+    .faq .accordion-header .accordion-button{
+      font-size: 15px;
+    }
+    .faq .accordion-body{
+      font-size: 15px;
+      line-height: 22px;
+    }
+    .accordion-button::after {
+      width: 1.2rem;
+      height: 1.2rem;
+    }
+    .asking-btn {
+      width: 120px;
+      height: 45px;
+      line-height: 45px;
+      margin-right: 8px;
+      margin-bottom: 8px;
+      font-size: 15px;
+  }
   }
 /* asking-btn-end
 *--------------------------------------------------------------
@@ -158,14 +200,8 @@ qna html Start
   font-size: 15px;
   color: #333;
 }
-#qna .qna-enter{
+#qna br{
   display: none;
-}
-#qna .qna-checkbox{
-  background-color: #215644;
-}
-#qna .qna-checkbox:active{
-  background-color: #215644;
 }
 #qna .qna-checkbox-text{
   font-size: 13px;
@@ -182,5 +218,16 @@ qna html Start
 @media (max-width: 992px) {
   .qna-enter{
     display: block;
+  }
+  #qna br{
+    display: block;
+  }
+}
+@media (max-width:415px){
+  #qna {
+    padding-top: 150px;
+  }
+  #qna .qna-submit {
+    padding: 8px 35px;
   }
 }
