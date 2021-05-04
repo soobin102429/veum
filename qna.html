@@ -50,144 +50,90 @@
             </ul>
             <i class="bi bi-text-right mobile-nav-toggle"></i>
         </nav><!-- .navbar -->
-        <a class="getstarted scrollto" href="#about">Contact Us</a>
+        <a class="getstarted scrollto" href="qna.html">Contact Us</a>
         </div>
     </header>
     <section id="qna">
-        <div class="container">
-            <div class="row">
-                <h1 class="mb-5 text-center">문의하기</h1>
+      <div class="container">
+        <h1 class="text-center mb-5">문의하기</h1>
+        <table class="table">
+          <tbody>
+            <tr>
+                <th scope="row">제&nbsp;&nbsp;&nbsp; 목</th>
+                <td>
+                  <select name="itemcd" required="" fld_esssential="" label="질문유형" class="select mb-2">
+                    <option value="">선택해주세요.</option>
+                    <option value="01">배송지연/불만</option>
+                    <option value="11">비움패스 (무료배송)</option>
+                    <option value="02">반품문의</option>
+                    <option value="03">A/S문의</option>
+                    <option value="06">환불문의</option>
+                    <option value="07">주문결제문의</option>
+                    <option value="08">회원정보문의</option>
+                    <option value="04">취소문의</option>
+                    <option value="05">교환문의</option>
+                    <option value="09">상품정보문의</option>
+                    <option value="10">기타문의</option>
+                  </select>
+                  <br>
+                  <input type="text" class="form-control" id="name">
+                </td>
+            </tr>
+            <tr>
+              <th scope="row">작성자</th>
+              <td><input type="text" class="form-control" id="name"></td>
+           </tr>
+            <tr>
+                <th scope="row">이메일</th>
+                <td><input type="email" class="form-control" id="corp_name"></td>
+            </tr>
+            <tr>
+                <th scope="row">연락처</th>
+                <td><input type="tel" class="form-control" id="phone_no"></td>
+            </tr>
+            <tr>
+                <th scope="row">내&nbsp;&nbsp;&nbsp;용</th>
+                <td><textarea class="form-control" placeholder="요청하실 내용을 적어주세요." id="content" spellcheck="false"></textarea><grammarly-extension data-grammarly-shadow-root="true" class="cGcvT" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: auto;"></grammarly-extension></td>
+            </tr>
+            <tr>
+              <th scope="row">이미지</th>
+              <td>
+                <input type="file" name="file[]" style="width:60%">
+              </td>
+            </tr>
+            </tbody>
+        </table>
+        <!-- 개인정보 동의 Start -->
+        <div class="agree-box-wrap">
+          <div class="row">
+            <div class="radio-gr all-agree-box">
+              <input type="checkbox" id="all_agree">
+              <label for="all_agree">개인정보 수집ㆍ이용 및 제공 동의(필수)</label>
             </div>
-            <div class="table-responsive">
-                <table class="table table-bordered">
-                    <tbody>
-                        <tr>
-                            <th scope="row" class="table-title">제목</th>
-                            <td>
-                                <select name="itemcd" required="" fld_esssential="" label="질문유형" class="select mb-2">
-                                        <option value="">선택해주세요.</option>
-                                        <option value="01">배송지연/불만</option>
-                                        <option value="11">컬리패스 (무료배송)</option>
-                                        <option value="02">반품문의</option>
-                                        <option value="03">A/S문의</option>
-                                        <option value="06">환불문의</option>
-                                        <option value="07">주문결제문의</option>
-                                        <option value="08">회원정보문의</option>
-                                        <option value="04">취소문의</option>
-                                        <option value="05">교환문의</option>
-                                        <option value="09">상품정보문의</option>
-                                        <option value="10">기타문의</option>
-                                </select>
-                                <br>
-                                <input type="text" name="subject" style="width:70%" label="제목">
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row" class="table-title">이메일</th>
-                            <td class="table-padding">
-                                <input type="text" name="email">
-                                <br>
-                                <span class="" style="padding-left:10px">
-                                    <input type="checkbox" class="qna-checkbox">
-                                    <span class="qna-checkbox-text">
-                                        답변수신을 이메일로 받겠습니다.
-                                    </span>
-                                </span>
-                            </td>
-                        </tr>
-                      <tr>
-                        <th scope="row" class="table-title">문자</th>
-                        <td class="table-padding">
-                            <input type="text" name="mobile[]">
-                            <br>
-                            <span class="" style="padding-left:10px">
-                                <input type="checkbox" class="qna-checkbox">
-                                <span class="qna-checkbox-text">
-                                    답변수신을 문자메시지로 받겠습니다.
-                                </span>
-                            </span>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row" class="table-title">내용</th>
-                        <td class="edit_area" style="position: relative;">       
-                            <div class="notice_qna">
-                                <strong>
-                                    상품문의 작성 전 확인해 주세요!
-                                </strong>
-                            
-                            <dl>
-                              <dd>
-                                <span>답변은 영업일 기준 2~3일 소요됩니다.</span>
-                                <span>해당 게시판의 성격과 다른 글은 사전동의 없이 담당 게시판으로 이동될 수 있습니다.</span>
-                              </dd>
-                            </dl>
-                            
-                            <dl>
-                              <dt>제품</dt>
-                              <dd>
-                                <span>입고일: 품절 상품 입고 일이 확정된 경우, 섬네일에 기재되어 있습니다.</span><br>
-                                <span>제품 상세정보: 영양성분 및 함량, 용량, 보관 및 취급 방법 등 제품 정보는 상세 이미지 또는 상세정보에서 확인 가능합니다.</span>
-                              </dd>
-                            </dl>
-                            
-                            <dl>
-                              <dt>반품 / 환불</dt>
-                              <dd>
-                                <span>제품 하자 혹은 이상으로 반품 (환불)이 필요한 경우 사진과 함께 구체적인 내용을 남겨주세요.</span>
-                              </dd>
-                            </dl>
-                            
-                            <dl>
-                              <dt>주문취소</dt>
-                              <dd>
-                                <span>
-                                    새벽 지역 : 배송일 전날 19시까지
-                                    <br>
-                                    택배 지역 : 배송일 전날 18시까지
-                                    <br>
-                                    고객행복센터(6404-7866)/ 1:1문의 게시판/ 카카오톡(비움) 으로 취소 요청 바랍니다.
-                                </span>
-                                <span>
-                                    생산이 시작된 이후에는 취소가 불가능 한 점 고객님의 양해 부탁드립니다.
-                                </span>
-                                <span>
-                                    일부 예약상품은 배송 3~4일 전에만 취소 가능합니다.
-                                </span>
-                                <span>
-                                    주문상품의 부분 취소는 불가능합니다. 전체 주문 취소 후 재구매 해주세요.
-                                </span>
-                                <span>
-                                    비회원 주문건의 경우 1:1문의 게시판 접수가 불가하기에 고객행복센터(6404-7866), 카카오톡(비움) 로 취소 요청 부탁드립니다.
-                                </span>
-                              </dd>
-                            </dl>
-                            
-                            <dl class="list">
-                              <dt>배송</dt>
-                              <dd>
-                                <span>주문 완료 후 배송 방법(새벽 / 택배)은 변경이 불가능합니다.</span>
-                                <span>배송일 및 배송시간 지정은 불가능합니다. (예약배송 포함)</span>
-                                <p class="info">※ 전화번호, 이메일, 주소, 계좌번호 등의 상세 개인정보가 문의 내용에 저장되지 않도록 주의해 주시기 바랍니다.</p>
-                              </dd>
-                            </dl>
-                            </div>
-                            
-                            <textarea name="contents" style="width:100%;height:474px;" class="editing_area" required="" fld_esssential="" label="내용"></textarea>
-                            </td>
-                      </tr>
-                      <tr>
-                        <th scope="row" class="table-title">이미지</th>
-                        <td width="80%" class="table-padding">
-                            <input type="file" name="file[]" style="width:60%" class="linebg">
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <input type="submit" value="저장" class="qna-submit float-end mt-4">
-                  
+          </div>
+          <div class="row text-center d-lg-flex align-items-center justify-content-center agree-list">
+            <div class="col-md-4 col-sm-12 mt-3">
+              <strong>수집하는 개인정보 항목</strong>
+              <p>이름, 연락처, 이메일</p>
             </div>
+            <div class="col-md-4 col-sm-12 mt-3">
+              <strong>수집 및 이용목적</strong>
+              <p>문의사항 답변을 위한 연락</p>
+            </div>
+            <div class="col-md-4 col-sm-12 mt-3">
+              <strong>보유 및 이용기간</strong>
+              <p>답변완료 후 90일</p>
+            </div>
+          </div>
         </div>
+        <!-- 개인정보 동의 end -->
+        <div class="qna-submit-wrap d-flex align-items-center justify-content-center mt-5">
+          <input type="submit" value="저장" class="qna-submit">
+        </div>
+        <!-- qna-submit end -->
+      </div>
+      <!-- container end -->
+      </div>  
     </section>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
