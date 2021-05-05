@@ -59,3 +59,4 @@ for (var i = 0; i < btns.length; i++) {
 }
 
 // btn 색 바뀌는거
+

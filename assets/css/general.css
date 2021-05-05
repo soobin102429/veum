@@ -149,6 +149,19 @@ section {
     opacity: 1;
   }
   
+  .getstarted {
+    background: #215644;
+    padding: 8px 20px;
+    margin-left: 30px;
+    border-radius: 30px;
+    color: #fff;
+  }
+  
+  .getstarted:hover {
+    color: #fff;
+    background: #215644;
+    box-shadow: 0 14px 26px -12px rgb(33 86 68 / 42%), 0 4px 23px 0px rgb(0 0 0 / 12%), 0 8px 10px -5px rgb(33 86 68 / 20%);
+  }
   /*--------------------------------------------------------------
   # Disable aos animation delay on mobile devices
   --------------------------------------------------------------*/
