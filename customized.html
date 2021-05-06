@@ -32,23 +32,23 @@
         </a>
 
         <nav id="custom-navbar-pc" class="custom-navbar-pc mx-auto">
-            <div class="custom-header d-flex align-items-center">
+            <div class="custom-header d-flex align-items-center" id="custom-pc">
                 <div class="custom-steps-wrap">
-                    <span class="custom-steps-active">1</span>
-                    <span class="main-color">기본정보</span>
+                    <span class="custom-steps-active custom-s-1">1</span>
+                    <span class="main-color custom-span">기본정보</span>
                 </div>
                 <div class="custom-steps-connect"></div>
 
                 <div class="custom-steps-wrap">
-                    <span class="custom-steps">2</span>
-                    <span>생활습관</span>
+                    <span class="custom-steps custom-s-2">2</span>
+                    <span class="custom-span">생활습관</span>
                 </div>
 
                 <div class="custom-steps-connect"></div>
 
                 <div class="custom-steps-wrap">
-                    <span class="custom-steps">3</span>
-                    <span>진단결과</span>
+                    <span class="custom-steps custom-s-3">3</span>
+                    <span class="custom-span">진단결과</span>
                 </div>
             </div>
         </nav><!-- .navbar -->
@@ -155,7 +155,7 @@
                 </p>
             </div>
             <div class="custom-end-btn mb-c mt-5">
-                <div class="getstarted">다음</div>
+                <div class="getstarted" id="custom-next-1" role="button">다음</div>
             </div>
         </div>
         <!-- container-end -->
@@ -201,59 +201,63 @@
                 <!-- 음주 end -->
             </div>
             <!-- 생활습관 end -->
-            <div class="row text-center mb-5 mx-auto">
+            <div class="text-center mb-5 mx-auto">
                 <h2 class="custom-q-title mb-c mt-4">대사건강지표를 확인해주세요</h2>
-                <div class="col-lg-4 col-sm-12 mx-auto">
-                    <div class="form-check mb-3">
+                <div class="form-wrap mx-auto row">
+                    <div class="col-lg-3 col-sm-12">&nbsp;</div>
+                    <div class="col-lg-3 col-sm-12">
+                        <div class="form-check mb-4">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
+                            <label class="form-check-label" for="flexCheckDefault">
+                            모름
+                            </label>
+                        </div>
+                        <div class="form-check mb-4">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
+                            <label class="form-check-label" for="flexCheckDefault">
+                                해당없음
+                            </label>
+                        </div>
+                        <div class="form-check mb-4">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
+                            <label class="form-check-label" for="flexCheckDefault">
+                                높은 혈당 : 공복혈당 100 mg/dL 이상
+                            </label>
+                        </div>
+                        <div class="form-check mb-4">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
+                            <label class="form-check-label" for="flexCheckDefault">
+                                HDL콜레스테롤혈증 : 50mg/dL 미만
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-12">
+                    <div class="form-check mb-4">
                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
                         <label class="form-check-label" for="flexCheckDefault">
-                        모름
+                            허리둘레 85 cm 이상 또는 BMI: 25 이상
                         </label>
                     </div>
-                    <div class="form-check mb-3">
+                    <div class="form-check mb-4">
                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
                         <label class="form-check-label" for="flexCheckDefault">
-                            해당없음
+                            높은 혈압 : 130 mmHg-85 mmHg 이상
                         </label>
                     </div>
-                    <div class="form-check mb-3">
+                    <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
                         <label class="form-check-label" for="flexCheckDefault">
-                            높은 혈당 : 공복혈당 100 mg/dL 이상
+                            높은 중성지방혈증 : 150 mg/dL 이상
                         </label>
                     </div>
-                    <div class="form-check mb-3">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-                        <label class="form-check-label" for="flexCheckDefault">
-                            낮은 HDL콜레스테롤혈증 : 50mg/dL 미만
-                        </label>
                     </div>
+                    <div class="col-lg-3 col-sm-12">&nbsp;</div>
                 </div>
-                <div class="col-lg-4 col-sm-12 mx-auto">
-                <div class="form-check mb-3">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-                    <label class="form-check-label" for="flexCheckDefault">
-                        허리둘레 85 cm 이상 또는 BMI: 25 이상
-                    </label>
-                </div>
-                <div class="form-check mb-3">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-                    <label class="form-check-label" for="flexCheckDefault">
-                        높은 혈압 : 130 mmHg 이상/85 mmHg 이상
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-                    <label class="form-check-label" for="flexCheckDefault">
-                        높은 중성지방혈증 : 150 mg/dL 이상
-                    </label>
-                </div>
-            </div>
             </div>
             <!-- 질병 end -->
             <div class="row text-center mb-5 mx-auto">
                 <h2 class="custom-q-title mb-c mt-4">다음 중 진단 받는 질환이 있다면 선택해주세요</h2>
-                <div class="custom-form-check">
+                <div class="custom-form-check  mb-5">
                     <div class="form-check form-check-inline form-mr">
                         <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" />
                         <label class="form-check-label" for="inlineCheckbox1">해당없음</label>
@@ -274,8 +278,80 @@
                 </div>
             </div>
             <!-- 질병 end -->
-            <div class="custom-end-btn mb-c mt-5">
-                <div class="getstarted">다음</div>
+            <div class="text-center mb-5 mx-auto">
+                <h2 class="custom-q-title mb-c mt-4">해당되는 식습관에 체크해주세요</h2>
+                <div class="form-wrap mx-auto row  mb-5">
+                    <div class="col-lg-3 col-sm-12">&nbsp;</div>
+                    <div class="col-lg-3 col-sm-12 mx-sm-auto">
+                        <div class="form-check mb-4">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
+                            <label class="form-check-label" for="flexCheckDefault">
+                            해당없음
+                            </label>
+                        </div>
+                        <div class="form-check mb-4">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
+                            <label class="form-check-label" for="flexCheckDefault">
+                                배가 불러도 계속 먹는다
+                            </label>
+                        </div>
+                        <div class="form-check mb-4">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
+                            <label class="form-check-label" for="flexCheckDefault">
+                                자극적인 음식을 즐긴다
+                            </label>
+                        </div>
+                        <div class="form-check mb-4">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
+                            <label class="form-check-label" for="flexCheckDefault">
+                                두부, 토마토를 즐기지 않는다
+                            </label>
+                        </div>
+                        <div class="form-check mb-4">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
+                            <label class="form-check-label" for="flexCheckDefault">
+                                식사 후 금방 허기진다
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-12  mb-5 mx-sm-auto">
+                    <div class="form-check mb-4">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
+                        <label class="form-check-label" for="flexCheckDefault">
+                            아침식사를 3회이상 거른다
+                        </label>
+                    </div>
+                    <div class="form-check mb-4">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
+                        <label class="form-check-label" for="flexCheckDefault">
+                            기름진 음식을 자주 먹는다
+                        </label>
+                    </div>
+                    <div class="form-check mb-4">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
+                        <label class="form-check-label" for="flexCheckDefault">
+                            여러 색의 채소를 챙겨먹기 힘들다
+                        </label>
+                    </div>
+                    <div class="form-check mb-4">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
+                        <label class="form-check-label" for="flexCheckDefault">
+                            흰쌀밥을 즐겨 먹는다
+                        </label>
+                    </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-12  mb-5">&nbsp;</div>
+                </div>
+            </div>
+            <!-- 질병 end -->
+            <div class="custom-end-btn mb-c mt-5 pt-5 pb-3">
+                <div class="getstarted" id="custom-next-2">다음</div>
+            </div>
+        </div>
+        <!-- container-end -->
+        <div class="container custom-q-3 mx-auto">
+            <div class="row">
+
             </div>
         </div>
         <!-- container-end -->
@@ -291,5 +367,17 @@
     
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script>
+        $('#custom-next-1').click(function(){
+        // $('custom-steps').attr('class','.custom-steps-active');
+        $('.custom-q-2').css('display','block');
+        $('.custom-q-1').css('display','none');
+        });
+        $('#custom-next-2').click(function(){
+        // $('custom-steps').attr('class','.custom-steps-active');
+        $('.custom-q-1').css('display','none');
+        $('.custom-q-2').css('display','none');
+        });
+    </script>
 </body>
 </html>

@@ -627,8 +627,9 @@ custom html Start
   text-align: center;
   margin: 0 auto;
   font-size: 1.2rem;
+  cursor: pointer;
 }
-#custom .custom-q-1{
+#custom .custom-q-2 ,.custom-q-2{
   display: none;
 }
 .form-check-input:checked {
