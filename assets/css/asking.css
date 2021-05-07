@@ -442,7 +442,7 @@ custom html Start
     width: 25px;
     height: 25px;
     border-radius: 100%;
-    background: #215644;
+    background: #215644 !important;
     font-family: 'Noto Sans KR', sans-serif;
     color: white !important;
     text-align: center;
@@ -451,7 +451,7 @@ custom html Start
     margin-right: 1rem;
  }
  .custom .custom-steps-wrap .main-color{
-   color: #215644;
+   color: #215644 !important;
    font-weight: 400;
  }
  .custom-steps{
@@ -485,7 +485,7 @@ custom html Start
     width: 20px;
     height: 20px;
     border-radius: 100%;
-    background: #215644;
+    background: #215644 !important;
     font-family: 'Noto Sans KR', sans-serif;
     color: white !important;
     text-align: center;
@@ -524,7 +524,7 @@ custom html Start
   line-height: 25px;
 }
 #custom .main-color{
-  color: #318468;
+  color: #318468 !important;
 }
 /* custom-title end */
 #custom .custom-q-title{
@@ -642,6 +642,11 @@ custom html Start
 #custom .form-check{
   text-align: left;
 }
+/* ==========active====  */
+.activea,.activeb,.activec,.actived,.activee,.activef{
+  background-color: #318468;
+  color: #fff !important;
+}
 @media (max-width: 992px) {
   .custom-navbar-pc{
     display: none;
@@ -655,3 +660,31 @@ custom html Start
 custom html end 
 ---------------------------------------------------------------
  */
+#earth{
+  background-image: url(../img/bg_key_word.jpg);
+  background-size: 100%;
+}
+#earth .earth-bg{
+  text-align: center;
+  width: 80%;
+  background: rgba(255,255,255,0.6);
+}
+#earth h2{
+  font-size: 30px;
+  text-align: center;
+  line-height: 45px;
+  color: #535353;
+  letter-spacing: -2px;
+}
+#earth .earth-img-bg{
+  width: 100%;
+}
+@media (max-width: 1023px) and (min-width: 319px){
+#earth h2 {
+    font-size: 17px;
+    line-height: 25px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    letter-spacing: 0.5px;
+}
+}
