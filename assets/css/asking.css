@@ -660,6 +660,38 @@ custom html Start
 custom html end 
 ---------------------------------------------------------------
  */
+#last-earth .last-earth-bg{
+  background-image: url(../img/last-earth-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+#last-earth{
+  padding:  60px 0 0 0;
+  margin-top: 30px;
+}
+#last-earth h1{
+  line-height: 7rem;
+  font-size: 4.5rem;
+  color: #fff;
+  font-weight: 400;
+}
+#last-earth .pd{
+  padding-top: 50px;
+}
+#last-earth h2{
+  color: #fff;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+#last-earth .m-br{
+  display: none;
+}
+#myVideo{
+  width: 65%;
+}
 #earth{
   background-image: url(../img/bg_key_word.jpg);
   background-size: 100%;
@@ -680,11 +712,78 @@ custom html end
   width: 100%;
 }
 @media (max-width: 1023px) and (min-width: 319px){
-#earth h2 {
+  #last-earth{
+    padding:  95px 0 0 0;
+    margin-top: 0;
+  }
+  #last-earth h1 {
+    line-height: 4rem;
+    font-size: 2.3rem;
+    color: #fff;
+    font-weight: 400;
+  }
+  #last-earth h2 {
+    color: #fff;
+    font-size: 1.0rem;
+    line-height: 1.6rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+  #earth h2 {
     font-size: 17px;
     line-height: 25px;
     padding-top: 50px;
     padding-bottom: 30px;
     letter-spacing: 0.5px;
 }
+#myVideo{
+  width: 90%;
 }
+
+}
+
+@media (max-width:900px){
+  #last-earth .m-br{
+    display: block;
+  }
+}
+
+@media (max-width:281){
+  #last-earth{
+    padding:  110px 0 0 0;
+    margin-top: 0;
+  }
+  #last-earth h1 {
+    line-height: 4rem;
+    font-size: 2.3rem;
+    color: #fff;
+    font-weight: 400;
+  }
+  #last-earth h2 {
+    color: #fff;
+    font-size: 1.0rem;
+    line-height: 1.6rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+  #earth h2 {
+    font-size: 17px;
+    line-height: 25px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    letter-spacing: 0.5px;
+}
+
+}
+
+/* 
+--------------------------------------------------------------
+personal-info html Start
+---------------------------------------------------------------
+ */
+
+ /* 
+--------------------------------------------------------------
+personal-info html end 
+---------------------------------------------------------------
+ */
