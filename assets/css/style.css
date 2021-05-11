@@ -1583,6 +1583,7 @@
 #footer-pc .footer-sns-wrap{
   color: white;
   font-size: 25px;
+  cursor: pointer;
 }
 /* footer-pc end */
 #footer-mobile{
@@ -1641,6 +1642,7 @@
 #footer-mobile .footer-sns-wrap i{
   margin-right: 20px;
   font-size: 25px;
+  cursor: pointer;
 }
 #footer-mobile .footer-menu-wrap li a{
   color: #fff;

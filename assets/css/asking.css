@@ -606,6 +606,9 @@ custom html Start
 .clearfix{
   clear: both;
 }
+#custom .custom-type{
+  background-color: none !important;
+}
 #custom .custom-btn-c-b{
   border: 1px solid #d9d9d9;
   border-radius: 4px 0 0 4px;
@@ -661,9 +664,8 @@ custom html end
 ---------------------------------------------------------------
  */
 #last-earth .last-earth-bg{
-  background-image: url(../img/last-earth-bg.jpg);
+  background-image: url(../img/bg_key_word.jpg);
   background-position: center;
-  background-repeat: no-repeat;
   background-size: 100%;
 }
 #last-earth{
@@ -673,24 +675,32 @@ custom html end
 #last-earth h1{
   line-height: 7rem;
   font-size: 4.5rem;
-  color: #fff;
-  font-weight: 400;
+  color: #535353;
+  font-weight: 500;
 }
 #last-earth .pd{
   padding-top: 50px;
 }
 #last-earth h2{
-  color: #fff;
+  color: #535353;
   font-size: 1.8rem;
   line-height: 3rem;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 1px;
 }
 #last-earth .m-br{
   display: none;
 }
+#last-earth .dot{
+  color: #215644;
+  font-size: 6rem;
+}
+#last-earth .main-color{
+  color: #215644;
+}
 #myVideo{
-  width: 65%;
+  width: 100%;
+  max-width: 960px;
 }
 #earth{
   background-image: url(../img/bg_key_word.jpg);
@@ -698,7 +708,8 @@ custom html end
 }
 #earth .earth-bg{
   text-align: center;
-  width: 80%;
+  width: 100%;
+  max-width: 1180px;
   background: rgba(255,255,255,0.6);
 }
 #earth h2{
@@ -711,23 +722,27 @@ custom html end
 #earth .earth-img-bg{
   width: 100%;
 }
+
 @media (max-width: 1023px) and (min-width: 319px){
   #last-earth{
     padding:  95px 0 0 0;
     margin-top: 0;
   }
   #last-earth h1 {
-    line-height: 4rem;
+    line-height: 3rem;
     font-size: 2.3rem;
-    color: #fff;
-    font-weight: 400;
+    color: #535353;
   }
   #last-earth h2 {
-    color: #fff;
+    color: #535353;
     font-size: 1.0rem;
     line-height: 1.6rem;
-    font-weight: 300;
+
     letter-spacing: 1px;
+}
+#last-earth .dot{
+  color: #215644;
+  font-size: 3rem;
 }
   #earth h2 {
     font-size: 17px;
@@ -736,8 +751,13 @@ custom html end
     padding-bottom: 30px;
     letter-spacing: 0.5px;
 }
+#earth .earth-bg{
+  text-align: center;
+  width: 95%;
+  background: rgba(255,255,255,0.6);
+}
 #myVideo{
-  width: 90%;
+  width: 95%;
 }
 
 }
@@ -778,12 +798,28 @@ custom html end
 
 /* 
 --------------------------------------------------------------
-personal-info html Start
+service - form html  info-check Start
+---------------------------------------------------------------
+ */
+#personal-info .footer-info-title{
+  font-weight: 500;
+}
+#personal-info .footer-info-body{
+  line-height: 1.7rem;
+}
+ /* 
+--------------------------------------------------------------
+service - form html / info-check end 
+---------------------------------------------------------------
+ */
+/* 
+--------------------------------------------------------------
+service - form html  info-check Start
 ---------------------------------------------------------------
  */
 
  /* 
 --------------------------------------------------------------
-personal-info html end 
+service - form html / info-check end 
 ---------------------------------------------------------------
  */

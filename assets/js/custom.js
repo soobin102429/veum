@@ -47,10 +47,10 @@ $('#custom-next-1').click(function(){
         // Checking the user providing a proper
         // value or not
         if (height === "" || isNaN(height)) 
-            result.innerHTML = "Provide a valid Height!";
+            result.innerHTML = "키를 입력해주세요!";
     
         else if (weight === "" || isNaN(weight)) 
-            result.innerHTML = "Provide a valid Weight!";
+            result.innerHTML = "체중을 입력해주세요!";
     
         // If both input is valid, calculate the bmi
         else {
@@ -61,14 +61,14 @@ $('#custom-next-1').click(function(){
     
             // Dividing as per the bmi conditions
             if (bmi < 18.6) result.innerHTML =
-                `Under Weight : <span>${bmi}</span>`;
+                `저체중 : <span>${bmi}</span>`;
     
             else if (bmi >= 18.6 && bmi < 24.9) 
                 result.innerHTML = 
-                    `Normal : <span>${bmi}</span>`;
+                    `정상체중 : <span>${bmi}</span>`;
     
             else result.innerHTML =
-                `Over Weight : <span>${bmi}</span>`;
+                `과체중 : <span>${bmi}</span>`;
         }
     };
 // bmi end
