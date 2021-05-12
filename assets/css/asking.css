@@ -184,7 +184,7 @@ qna html Start
 ---------------------------------------------------------------
  */
 #qna{
-  padding-top: 200px;
+  padding-top: 150px;
 }
 #qna .table{
   color: #333;
@@ -204,9 +204,17 @@ qna html Start
   border-radius: 5px;
   outline: none;
 }
-#qna br{
-  display: none;
+#qna h2{
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 3%;
 }
+#qna .main-color{
+  color: #2c755e;
+}
+/* #qna br{
+  display: none;
+} */
 #qna th {
   color: #333;
   font-weight: 700;
@@ -664,9 +672,11 @@ custom html end
 ---------------------------------------------------------------
  */
 #last-earth .last-earth-bg{
-  background-image: url(../img/bg_key_word.jpg);
+  background-image: url(../img/last-earth-bg.jpg);
   background-position: center;
-  background-size: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  
 }
 #last-earth{
   padding:  60px 0 0 0;
@@ -675,14 +685,14 @@ custom html end
 #last-earth h1{
   line-height: 7rem;
   font-size: 4.5rem;
-  color: #535353;
+  color: #fff;
   font-weight: 500;
 }
 #last-earth .pd{
   padding-top: 50px;
 }
 #last-earth h2{
-  color: #535353;
+  color: #ffff;
   font-size: 1.8rem;
   line-height: 3rem;
   font-weight: 400;
@@ -692,11 +702,11 @@ custom html end
   display: none;
 }
 #last-earth .dot{
-  color: #215644;
+  color: #3c9a7b;
   font-size: 6rem;
 }
 #last-earth .main-color{
-  color: #215644;
+  color: #3c9a7b;
 }
 #myVideo{
   width: 100%;
@@ -731,17 +741,17 @@ custom html end
   #last-earth h1 {
     line-height: 3rem;
     font-size: 2.3rem;
-    color: #535353;
+    color: #fff;
   }
   #last-earth h2 {
-    color: #535353;
+    color: #fff;
     font-size: 1.0rem;
     line-height: 1.6rem;
 
     letter-spacing: 1px;
 }
 #last-earth .dot{
-  color: #215644;
+  color: #3c9a7b;
   font-size: 3rem;
 }
   #earth h2 {
@@ -817,7 +827,26 @@ service - form html / info-check end
 service - form html  info-check Start
 ---------------------------------------------------------------
  */
-
+ #Cvalue{
+   padding-top: 150px;
+ }
+ #Cvalue .bg{
+   background-color: bisque;
+ }
+ #Cvalue .sm-title-C{
+  color: rgb(34, 34, 34);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 23px;
+ }
+ #Cvalue .main-title-C{
+  font-weight: 700;
+ }
+ #Cvalue .inner-text-C{
+  font-size: 17px;
+  line-height: 27px;
+  color: #535353;
+ }
  /* 
 --------------------------------------------------------------
 service - form html / info-check end 
