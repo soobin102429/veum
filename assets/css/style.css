@@ -318,5 +318,86 @@
 /*--------------------------------------------------------------
 # arrival End
 --------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Card-news Start
+--------------------------------------------------------------*/
+.card-news .card{
+  border: none;
+}
+.card-news  .g-text{
+  color: rgb(161, 161, 161);
+  font-size: 14px;
+}
+.card-news  .b-text{
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: rgb(59, 59, 59);
+}
+.card-news.img-animation{
+  border-radius: 9px;
+}
+.card-news .border-arrival{
+  display: block;
+  box-sizing: border-box;
+}
+.card-news img{
+  width: 100%;
+}
 
+/*--------------------------------------------------------------
+# Card-news End
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# review Start
+--------------------------------------------------------------*/
+.review{
+  width: 100%;
+  background-color: #f7f8f9;
+  padding: 50px 0;
+}
+.review .card{
+  padding: 15px;
+}
+.review .stars{
+  color: #286a55;
+  font-size: 1.2rem;
+}
+.review .g-text{
+  color: rgb(161, 161, 161);
+  font-size: 14px;
+}
+.review .g-date{
+  color: rgb(161, 161, 161);
+  font-size: 13px;
+}
+
+.review .border-arrival{
+  display: block;
+  box-sizing: border-box;
+}
+.review img{
+  width: 100%;
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+.review img:hover{
+  transform: scale(1.2);
+}
+.swiper-button-next:after, .swiper-button-prev:after {
+  font-family: swiper-icons;
+  font-size: var(--swiper-navigation-size);
+  text-transform: none!important;
+  letter-spacing: 0;
+  text-transform: none;
+  font-variant: initial;
+  line-height: 1;
+  background: white;
+  border-radius: 30px;
+  padding: 15px 20px;
+  font-size: 15px;
+  color: black;
+}
+/*--------------------------------------------------------------
+# review End
+--------------------------------------------------------------*/
 

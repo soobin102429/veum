@@ -943,7 +943,15 @@ service - form html  info-check Start
    margin-bottom: 150px;
  }
  #Cvalue .inner-img{
-   padding: 160px;
+   padding: 160px 0;
+ }
+ @media(max-width: 541px){
+  #Cvalue .m-img{
+    margin-bottom: 100px;
+  }
+  #Cvalue .inner-img{
+    padding: 150px 0;
+  }
  }
  @media (max-width: 281px) {
   #Cvalue .sm-title-C {
