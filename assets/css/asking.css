@@ -879,6 +879,7 @@ service - form html  info-check Start
   font-weight: 700;
   font-size: 14px;
   line-height: 23px;
+  margin: 0 0 25px 0;
  }
  #Cvalue .main-title-C{
   font-weight: 700;
@@ -887,6 +888,7 @@ service - form html  info-check Start
   font-size: 17px;
   line-height: 27px;
   color: #535353;
+  margin-top: 25px;
  }
  #Cvalue .txt-w{
    color: white;
@@ -903,10 +905,6 @@ service - form html  info-check Start
    background-image: url(../img/cvalue-img02.jpg);
    background-repeat: no-repeat;
    background-size: cover;
- }
- #Cvalue .pb-c{
-   padding-top: 200px;
-   padding-bottom: 200px;
  }
  #Cvalue .b-bg{
    background: white;
@@ -940,6 +938,12 @@ service - form html  info-check Start
  }
  #V-video{
    width: 100%;
+ }
+ #Cvalue .m-img{
+   margin-bottom: 150px;
+ }
+ #Cvalue .inner-img{
+   padding: 160px;
  }
  @media (max-width: 281px) {
   #Cvalue .sm-title-C {
