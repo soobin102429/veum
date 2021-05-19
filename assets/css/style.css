@@ -97,11 +97,12 @@
 @media (max-width: 991px) {
   .hero {
     height: auto;
-    padding: 120px 0 60px 0;
+    padding: 100px 0 60px 0;
   }
   .hero .hero-img {
     text-align: center;
-    margin-top: 80px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   .hero .hero-img img {
     width: 80%;
@@ -342,6 +343,184 @@
 }
 .card-news img{
   width: 100%;
+  position: relative;
+}
+.card-news img:hover{
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+}
+/* ------------------------- */
+
+.card-news .portfolio-wrap {
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.card-news .portfolio-wrap::before {
+  content: "";
+  background: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  left: 30px;
+  right: 30px;
+  top: 30px;
+  bottom: 30px;
+  z-index: 2;
+  opacity: 0;
+}
+
+.card-news .portfolio-wrap .portfolio-info {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  z-index: 3;
+  transition: all ease-in-out 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-news .portfolio-wrap .portfolio-info h4 {
+  font-size: 25px;
+  color: #333;
+  font-weight: 500;
+}
+
+.card-news .portfolio-wrap .portfolio-info p {
+  color: #333;
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+}
+
+.card-news .portfolio-wrap .portfolio-links {
+  text-align: center;
+  z-index: 4;
+}
+
+.card-news .portfolio-wrap .portfolio-links a {
+  color: #fff;
+  background: #215844;
+  margin: 10px 2px;
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.card-news .portfolio-wrap .portfolio-links a i {
+  font-size: 24px;
+  line-height: 0;
+}
+
+.card-news .portfolio-wrap .portfolio-links a:hover {
+  background: #215844;
+}
+
+.card-news .portfolio-wrap:hover img {
+  transform: scale(1.1);
+}
+
+.card-news .portfolio-wrap:hover::before {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 1;
+}
+
+.card-news .portfolio-wrap:hover .portfolio-info {
+  opacity: 1;
+}
+
+.card-news .portfolio-wrap:hover .portfolio-info::before {
+  top: 15px;
+  left: 15px;
+}
+.card-news .portfolio-wrap:hover .portfolio-info::after {
+  bottom: 15px;
+  right: 15px;
+}
+/*--------------------------------------------------------------
+# Portfolio Details
+--------------------------------------------------------------*/
+.card-news .portfolio-details {
+  padding-top: 40px;
+}
+
+.card-news .portfolio-details .portfolio-details-slider img {
+  width: 100%;
+}
+
+.card-news .portfolio-details .portfolio-details-slider .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.card-news .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  border: 1px solid #4154f1;
+}
+
+.card-news .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #4154f1;
+}
+
+.card-news .portfolio-details .portfolio-info {
+  padding: 30px;
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+}
+
+.card-news .portfolio-details .portfolio-info h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.card-news .portfolio-details .portfolio-info ul {
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+}
+
+.card-news .portfolio-details .portfolio-info ul li + li {
+  margin-top: 10px;
+}
+
+.card-news .portfolio-details .portfolio-description {
+  padding-top: 30px;
+}
+
+.card-news .portfolio-details .portfolio-description h2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.card-news .portfolio-details .portfolio-description p {
+  padding: 0;
+}
+.glightbox-clean .gdesc-inner {
+  padding: 22px 20px;
+  display: none;
 }
 
 /*--------------------------------------------------------------

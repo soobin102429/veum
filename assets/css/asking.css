@@ -462,237 +462,83 @@ notice html end
 custom html Start
 ---------------------------------------------------------------
  */
- .custom-steps-connect{
-  width: 7.5rem;
-  height: 1px;
-  background: rgb(189, 189, 189);
-  margin: 0 1rem;
- }
- .custom-steps-active{
-    width: 25px;
-    height: 25px;
-    border-radius: 100%;
-    background: #215644 !important;
-    font-family: 'Noto Sans KR', sans-serif;
-    color: white !important;
-    text-align: center;
-    line-height: 25px;
-    padding: 4px 12px;
-    margin-right: 1rem;
- }
- .custom .custom-steps-wrap .main-color{
-   color: #215644 !important;
-   font-weight: 400;
- }
- .custom-steps{
-  width: 25px;
-  height: 25px;
-  border-radius: 100%;
-  border: 1px solid #999999;
-  font-family: 'Noto Sans KR', sans-serif;
-  color: #999999;
-  text-align: center;
-  line-height: 25px;
-  margin-right: 1rem;
-  padding: 4px 12px;
+#customized article{
+  display: flex;
+  flex-direction: column;
+  margin: auto auto;
 }
-.custom-steps-wrap span{
-  color: #999;
-  font-weight: 400;
-  font-size: 1rem;
+#customized .progress-bar{
+  background-color: #333;
 }
-/* pc end */
-#custom-navbar-mobile{
+#customized .question{
   display: none;
 }
-.custom-steps-connect-m{
-  width: 2.5rem;
-  height: 1px;
-  background: rgb(189, 189, 189);
-  margin: 0 0.4rem;
- }
- .custom-steps-active-m{
-    width: 20px;
-    height: 20px;
-    border-radius: 100%;
-    background: #215644 !important;
-    font-family: 'Noto Sans KR', sans-serif;
-    color: white !important;
-    text-align: center;
-    line-height: 18px;
-    padding: 3px 10.5px;
-    margin-right: 0.4rem;
- }
- .custom-steps-m{
-  width: 20px;
-  height: 20px;
-  border-radius: 100%;
-  border: 1px solid #999999;
+#customized .result{
+  display: none;
+}
+#customized #title{
+  font-size: 2rem;
+  line-height: 3rem;
+}
+#customized .title,#animal{
   font-family: 'Noto Sans KR', sans-serif;
-  color: #999999;
-  text-align: center;
-  line-height: 18px;
-  margin-right: 0.4rem;
-  padding: 3px 10.5px;
+  font-weight: 700;
 }
-.custom-steps-wrap-m span{
-  color: #999;
-  font-weight: 400;
-  font-size: 1rem;
+#customized .font{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px;
 }
-/* header end */
-#custom{
-  padding-top: 150px;
+#customized .font2{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
-#custom h2{
-  line-height: 40px;
-  font-weight: 400;
-  padding: 0;
+#customized .line-height-btn{
+  line-height: 50px;
+  border-radius: 15px;
+  background-color: rgb(9, 9, 9);
 }
-#custom p{
-  color: #999;
-  line-height: 25px;
+#customized .line-height-btn:hover{
+  background-color: #000;
 }
-#custom .main-color{
-  color: #318468 !important;
+#customized .btn-dark{
+  background-color: black !important;
 }
-/* custom-title end */
-#custom .custom-q-title{
-  font-weight: 500;
-  line-height: 45px;
-}
-#custom .custom-q-ex{
-  color: #444;
-  font-weight: 400;
-}
-#custom .custom-btn-c{
-  border: 1px solid #d9d9d9;
-  border-radius: 4px 0 0 4px;
-  width: 230px;
-  height: 80px;
-  text-align: center;
-  line-height: 80px;
-  font-size: 1.4rem;
-  font-weight: 400;
-  color: #555;
-}
-#custom .custom-btn-c-none{
-  border-radius: 4px 0 0 4px;
-  width: 230px;
-  height: 80px;
-  text-align: center;
-  line-height: 80px;
-  font-size: 1.4rem;
-  font-weight: 400;
-}
-#custom .custom-btn-c:hover{
-  color: #318468;
-}
-#custom .mb-c{
-  margin-bottom: 30px;
-}
-#custom .btn-ml{
-  margin-left: 30px;
-}
-#custom .custom-q-d{
-  color: #999;
-}
-#custom .custom-btn-t{
-  border: 1px solid #d9d9d9;
-  border-radius: 4px 0 0 4px;
-  width: 230px;
-  height: 80px;
-  text-align: center;
-  line-height: 80px;
-  font-size: 1.4rem;
-  font-weight: 400;
-  color: #555;
-  padding: 0px 10px 0px 10px ;
-}
-#custom .custom-type-wrap{
-  border: 1px solid #d9d9d9;
-  border-radius: 4px 0 0 4px;
+#customized #img{
   width: 300px;
-  height: 80px;
-  text-align: center;
-  line-height: 80px;
-  font-size: 1.4rem;
-  font-weight: 400;
-  color: #555;
-}
-#custom .custom-type-wrap:hover, .custom-type-wrap:focus{
-  border: 1px solid #318468;
-}
-#custom .custom-type{
-  border: none;
-  box-shadow: none;
-  width: 230px;
-}
-#custom .custom-type:focus, .custom-type:hover{
-  border: none;
-  outline: none;
-  box-shadow: none;
-}
-.clearfix{
-  clear: both;
-}
-#custom .custom-type{
-  background-color: none !important;
-}
-#custom .custom-btn-c-b{
-  border: 1px solid #d9d9d9;
-  border-radius: 4px 0 0 4px;
-  width: 400px;
-  height: 120px;
-  text-align: center;
-  line-height: 60px;
-  font-size: 1.4rem;
-  font-weight: 400;
-  color: #555;
-}
-#custom .custom-btn-c-b:hover{
-  color: #318468;
-}
-#custom .getstarted{
-  width: 400px;
-  padding: 30px 20px;
-  border-radius: 4px 0 0 4px;
-  text-align: center;
+  height: 300px;
   margin: 0 auto;
-  font-size: 1.2rem;
-  cursor: pointer;
+  -webkit-user-drag: none;
 }
-#custom .custom-q-2 ,.custom-q-2{
-  display: none;
+#customized #img2{
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  -webkit-user-drag: none;
 }
-.form-check-input:checked {
-  background-color: #215844 !important;
-  border-color: #215844 !important;
+#customized #mbti-result{
+  text-align: left !important;
+  line-height: 25px;
+  background: rgb(255, 255, 255);
+  padding: 30px 0;
+  color: black;
 }
-.form-mr{
-  margin-right: 5%;
+#customized #explain{
+  font-size: 15px;
 }
-#custom .form-check{
-  text-align: left;
+#customized .logo{
+  width: 70px;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 40%;
+  bottom: 0;
 }
-/* ==========active====  */
-.activea,.activeb,.activec,.actived,.activee,.activef{
-  background-color: #318468;
-  color: #fff !important;
-}
-@media (max-width: 992px) {
-  .custom-navbar-pc{
-    display: none;
-  }
-  .custom-navbar-mobile{
-    display: block !important;
-  }
-}
-/* 
---------------------------------------------------------------
+
+/* --------------------------------------------------------------
 custom html end 
 ---------------------------------------------------------------
- */
+ */ 
 #last-earth .last-earth-bg{
   background-image: url(../img/last-earth-bg.jpg);
   background-position: center;
@@ -1034,6 +880,19 @@ Environment html Start
   /* 
 --------------------------------------------------------------
 Environment html end 
+---------------------------------------------------------------
+ */
+ /* 
+--------------------------------------------------------------
+Menu Start
+---------------------------------------------------------------
+ */
+#menu{
+  padding-top: 100px;
+}
+  /* 
+--------------------------------------------------------------
+Menu html Start 
 ---------------------------------------------------------------
  */
 

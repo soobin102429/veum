@@ -133,7 +133,7 @@
           </div>
         </div>
         <!-- 개인정보 동의 end -->
-        <div class="qna-submit-wrap d-flex align-items-center justify-content-center mt-5">
+        <div class="qna-submit-wrap d-flex align-items-center justify-content-center mt-5" onclick="javascript:btn('')">
           <input type="submit" value="저장" class="qna-submit">
         </div>
         <!-- qna-submit end -->
@@ -263,5 +263,11 @@
     
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script>
+      function btn(){
+         alert('성공적으로 전송되었습니다.');
+         window.location.reload();
+        }
+    </script>
 </body>
 </html>

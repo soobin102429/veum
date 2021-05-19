@@ -24,343 +24,71 @@
 </head>
 <body class="no-drag">
     <!-- ======= Header ======= -->
-    <header id="header" class="header custom fixed-top">
+    <header id="header" class="header fixed-top">
         <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
         <a href="index.html" class="logo">
             <img src="assets/img/logo-g.png" alt="logo">
         </a>
 
-        <nav id="custom-navbar-pc" class="custom-navbar-pc mx-auto">
-            <div class="custom-header d-flex align-items-center" id="cb7">
-                <div class="custom-steps-wrap">
-                    <span class="custom-steps custom-steps-1 custom-steps-active">1</span>
-                    <span class="custom-span custom-span-1 main-color">기본정보</span>
-                </div>
-                <div class="custom-steps-connect"></div>
-
-                <div class="custom-steps-wrap">
-                    <span class="custom-steps custom-steps-2">2</span>
-                    <span class="custom-span custom-span-2">생활습관</span>
-                </div>
-
-                <div class="custom-steps-connect"></div>
-
-                <div class="custom-steps-wrap">
-                    <span class="custom-steps custom-steps-3">3</span>
-                    <span class="custom-span custom-span-3">진단결과</span>
-                </div>
-            </div>
-        </nav><!-- .navbar -->
-        <nav id="custom-navbar-mobile" class="custom-navbar-mobile float-end">
-            <div class="custom-header d-flex align-items-center">
-                <div class="custom-steps-wrap-m">
-                    <span class="custom-steps-m custom-steps-1-m custom-steps-active-m">1</span>
-                </div>
-                <div class="custom-steps-connect-m"></div>
-
-                <div class="custom-steps-wrap-m">
-                    <span class="custom-steps-m custom-steps-2-m">2</span>
-                </div>
-
-                <div class="custom-steps-connect-m"></div>
-
-                <div class="custom-steps-wrap-m">
-                    <span class="custom-steps-m custom-steps-3-m">3</span>
-                </div>
-            </div>
+        <nav id="navbar" class="navbar">
+            <ul>
+            <!-- <li><a class="nav-link scrollto active" href="#hero">Home</a></li> -->
+            <li class="dropdown"><a href="#" onclick="return false"><span>WhyVeum?</span> <i class="bi bi-chevron-down"></i></a>
+                <ul>
+                <li><a href="value.html">가치체계</a></li>
+                <li><a href="whyveum.html">나를 위해, 지구를 위해.</a></li>
+                <li><a href="environment.html">환경을 위한 포장</a></li>
+                </ul>
+            </li>
+            <li><a class="nav-link scrollto" href="menu.html">Menu</a></li>
+            <li><a class="nav-link scrollto" href="customized.html">Customized Diet</a></li>
+            <!-- <li><a class="nav-link scrollto" href="#team">Customer Service</a></li> -->
+            <!-- <li><a href="blog.html">Blog</a></li> -->
+            <li class="dropdown"><a href="#"><span>Customer Service</span> <i class="bi bi-chevron-down"></i></a>
+                <ul>
+                <li><a href="FAQ.html">F&Q</a></li>
+                <li><a href="notice.html">공지사항</a></li>
+                <li><a href="qna.html">문의하기</a></li>
+                </ul>
+            </li>
+            <!-- <li><a class="nav-link scrollto" href="#contact">Contact</a></li> -->
+            </ul>
+            <i class="bi bi-text-right mobile-nav-toggle"></i>
         </nav><!-- .navbar -->
         <a class="getstarted scrollto" href="qna.html">Contact Us</a>
         </div>
     </header>
-
-    <section id="custom" class="custom mx-auto">
-        <div class="container custom-q-1 mx-auto">
-            <div class="row custom-title text-center mb-5">
-                <h2>고객님이 알려주신 건강정보를 토대로</h2>
-                <h2 class="mb-2"><span class="main-color"> 1:1 맞춤식단</span>이 만들어집니다.</h2>
-                <p>번거롭더라도 반드시 선택 / 입력 바랍니다.
-                    <br>
-                    * 약 3분정도 소요됩니다!
-                </p>
+    <section class="customized" id="customized">
+      <div class="container">
+        <article class="start">
+            <h1 class="mt-5 text-center title">나랑 맞는 친구 유형은?</h1>
+            <img src="images/19.gif" alt="친구" id="img2">
+            <button type="button" class="btn  btn-dark mt-5 font line-height-btn" onclick="start();">테스트 시작</button>
+            <div class="logo"><img src="images/logo.png" alt="logo" class="logo"></div>
+        </article>
+        <article class="question">
+            <div class="progress mt-5">
+                <div class="progress-bar" role="progressbar" style="width: calc(100/12*1%)" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
-            <!-- custom -title end -->
-            <div class="row text-center mb-5 mx-auto" id="cb2">
-                <h2 class="custom-q-title mb-c mt-4">식단을 드시는 분과의 관계</h2>
-                <div class="custom-btn-wrap d-flex justify-content-center mb-3">
-                    <div class="custom-btn-c c2" role="button">본인</div>
-                    <div class="custom-btn-c btn-ml c2" role="button">배우자</div>
-                </div>
-                <div class="custom-btn-wrap d-flex justify-content-center mb-3">
-                    <div class="custom-btn-c c2" role="button">드시는 분의 자녀</div>
-                    <div class="custom-btn-c btn-ml c2" role="button">드시는 분의 부모</div>
-                </div>
-                <div class="custom-btn-wrap d-flex justify-content-center mb-c">
-                    <div class="custom-btn-c c2" role="button">기타</div>
-                    <div class="custom-btn-c-none btn-ml c2" role="button"></div>
-                </div>
-                <!-- 누군지 end -->
-            </div>
-            <!-- 정보 end -->
-            <div class="row text-center mb-5 mx-auto">
-                <h2 class="custom-q-title mb-c mt-4">식사를 드시는 분</h2>
-                <h5 class="custom-q-ex mb-c">
-                    식단 드시는 분의 성별이 어떻게 되나요?
-                </h5>
-                <div class="custom-btn-wrap d-flex justify-content-center mb-c" id="cb1">
-                    <div class="custom-btn-c c1" role="button">남</div>
-                    <div class="custom-btn-c c1 btn-ml" role="button">여</div>
-                </div>
-                <!-- 성별 end -->
-                <h5 class="custom-q-ex mb-c">
-                    식단을 드시는 분은 몇 년생이신가요? <span class="custom-q-d">(예: 1996년)</span>
-                </h5>
-                <div class="custom-type-wrap d-flex justify-content-center mx-auto mb-c">
-                    <input type="tel" class="custom-type" name="bornYear" placeholder="예: 1990" maxlength="4" id ="age">
-                    <span class="custom-q-dt">년</span>
-                </div>
-                <!-- 생년 end -->
-                <h5 class="custom-q-ex mb-c">
-                    식단 드시는 분의 키와 몸무게를 입력해주세요.
-                </h5>
-                <div class="custom-type-wrap d-flex justify-content-center mx-auto mb-c">
-                    <input type="tel" class="custom-type" name="cm" placeholder="예: 165" maxlength="3" id ="height">
-                    <span class="custom-q-dt">m</span>
-                </div>
-                <div class="clearfix"></div>
-                <div class="custom-type-wrap d-flex justify-content-center mx-auto mb-c">
-                    <input type="tel" class="custom-type" name="kg" placeholder="예: 68" maxlength="3" id ="weight">
-                    <span class="custom-q-dt">kg</span>
-                </div>
-                <!-- 키 몸무계 end -->
-            </div>
-            <!-- 건강정보 end -->
-            <div class="row text-center mb-5 mx-auto" id="cb3">
-                <h2 class="custom-q-title mb-c mt-4">식사와 관련하여<br>
-                    병원에서 진단받은 내용이 있나요?</h2>
-                <div class="custom-btn-wrap d-flex justify-content-center mb-3">
-                    <div class="custom-btn-c-b c3" role="button"><strong>네,</strong>병원에서 권장한 식단을 바탕으로 <br>식사 하고싶어요.</div>
-                </div> 
-                <div class="custom-btn-wrap d-flex justify-content-center mb-5">
-                    <div class="custom-btn-c-b c3" role="button"><strong>아니요,</strong>진단 받은 내역이 없어요.<br>일반식 하고싶어요.</div>
-                </div> 
-                <div class="clearfix"></div>
-                <!-- 병원 end -->
-            </div>
-            <div class="custom-notice text-center mb-5 mt-4">
-                <strong class="mb-3">특이사항</strong>
-                <p>당뇨병, 고혈압/이상지혈증, 통풍(요산수치증가)이나<br>
-                   기타 알러지가 있으신 분들은 문의하기를 통해<br>
-                   식사 제한 사항에 대해 알려주세요.
-                </p>
-            </div>
-            <div class="custom-end-btn mb-c mt-5" id="button_1">
-                <div class="getstarted" id="custom-next-1" role="button">
-                    다음
-                </div>
-            </div>
-        </div>
-        <!-- container-end -->
-        <div class="container custom-q-2 mx-auto">
-            <div class="row custom-title text-center mb-5 ct2">
-                <h2>고객님이 알려주신 생활습관을 바탕으로</h2>
-                <h2 class="mb-2"><span class="main-color"> 1:1 맞춤식단</span>이 만들어집니다.</h2>
-                <p>번거롭더라도 반드시 선택 / 입력 바랍니다.
-                    <br>
-                    * 약 1분정도 소요됩니다!
-                </p>
-            </div>
-            <!-- custom -title end -->
-            <div class="row text-center mb-5 mx-auto" id="cb4">
-                <h2 class="custom-q-title mb-c mt-4">흡연 여부를 알려주세요</h2>
-                <div class="custom-btn-wrap d-flex justify-content-center mb-3">
-                    <div class="custom-btn-c c4" role="button" id="a">피우지 않음</div>
-                    <div class="custom-btn-c btn-ml c4" role="button" id="b">과거 흡연</div>
-                </div>
-                <div class="custom-btn-wrap d-flex justify-content-center mb-5">
-                    <div class="custom-btn-c c4" role="button">하루 한 갑 미만</div>
-                    <div class="custom-btn-c btn-ml c4" role="button">하루 한 갑 이상</div>
-                </div>
-                <!-- 흡연 end -->
-                <h2 class="custom-q-title mb-c mt-4">평소 활동량은 얼마나 되나요?</h2>
-                <div class="custom-btn-wrap d-flex justify-content-center mb-5" id="cb5">
-                    <div class="custom-btn-c c5" role="button">운동 안함</div>
-                    <div class="custom-btn-c btn-ml c5" role="button">가벼운 운동</div>
-                    <div class="custom-btn-c btn-ml c5" role="button">땀 날 정도</div>
-                </div>
-                <!-- 활동량 end -->
-                <div id="cb6">
-                    <h2 class="custom-q-title mb-c mt-4">과음 여부를 알려주세요
-                        <span class="custom-q-d">(한번에 5잔이상)</span>
-                    </h2>
-                    <div class="custom-btn-wrap d-flex justify-content-center mb-3">
-                        <div class="custom-btn-c c6" role="button">거의 마시지 않음</div>
-                        <div class="custom-btn-c btn-ml c6" role="button">한달 1회 미만</div>
-                    </div>
-                    <div class="custom-btn-wrap d-flex justify-content-center mb-5">
-                        <div class="custom-btn-c c6" role="button">주 2회 미만</div>
-                        <div class="custom-btn-c btn-ml c6" role="button">주 2회 이상</div>
-                    </div>
-                </div>
-                <!-- 음주 end -->
-            </div>
-            <!-- 생활습관 end -->
-            <div class="text-center mb-5 mx-auto">
-                <h2 class="custom-q-title mb-c mt-4">대사건강지표를 확인해주세요</h2>
-                <div class="form-wrap mx-auto row">
-                    <div class="col-lg-3 col-sm-12">&nbsp;</div>
-                    <div class="col-lg-3 col-sm-12">
-                        <div class="form-check mb-4">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-                            <label class="form-check-label" for="flexCheckDefault">
-                            모름
-                            </label>
-                        </div>
-                        <div class="form-check mb-4">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-                            <label class="form-check-label" for="flexCheckDefault">
-                                해당없음
-                            </label>
-                        </div>
-                        <div class="form-check mb-4">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-                            <label class="form-check-label" for="flexCheckDefault">
-                                높은 혈당 : 공복혈당 100 mg/dL 이상
-                            </label>
-                        </div>
-                        <div class="form-check mb-4">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-                            <label class="form-check-label" for="flexCheckDefault">
-                                HDL콜레스테롤혈증 : 50mg/dL 미만
-                            </label>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-12">
-                    <div class="form-check mb-4">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-                        <label class="form-check-label" for="flexCheckDefault">
-                            허리둘레 85 cm 이상 또는 BMI: 25 이상
-                        </label>
-                    </div>
-                    <div class="form-check mb-4">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-                        <label class="form-check-label" for="flexCheckDefault">
-                            높은 혈압 : 130 mmHg-85 mmHg 이상
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-                        <label class="form-check-label" for="flexCheckDefault">
-                            높은 중성지방혈증 : 150 mg/dL 이상
-                        </label>
-                    </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-12">&nbsp;</div>
-                </div>
-            </div>
-            <!-- 질병 end -->
-            <div class="row text-center mb-5 mx-auto">
-                <h2 class="custom-q-title mb-c mt-4">다음 중 진단 받는 질환이 있다면 선택해주세요</h2>
-                <div class="custom-form-check  mb-5">
-                    <div class="form-check form-check-inline form-mr">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" />
-                        <label class="form-check-label" for="inlineCheckbox1">해당없음</label>
-                      </div>
-                      
-                      <div class="form-check form-check-inline form-mr">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2" />
-                        <label class="form-check-label" for="inlineCheckbox2">고혈압</label>
-                      </div>
-                      <div class="form-check form-check-inline form-mr">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option3" />
-                        <label class="form-check-label" for="inlineCheckbox2">당뇨</label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option4" />
-                        <label class="form-check-label" for="inlineCheckbox2">고지혈증</label>
-                      </div>
-                </div>
-            </div>
-            <!-- 질병 end -->
-            <div class="text-center mb-5 mx-auto">
-                <h2 class="custom-q-title mb-c mt-4">해당되는 식습관에 체크해주세요</h2>
-                <div class="form-wrap mx-auto row  mb-5">
-                    <div class="col-lg-3 col-sm-12">&nbsp;</div>
-                    <div class="col-lg-3 col-sm-12 mx-sm-auto">
-                        <div class="form-check mb-4">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-                            <label class="form-check-label" for="flexCheckDefault">
-                            해당없음
-                            </label>
-                        </div>
-                        <div class="form-check mb-4">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-                            <label class="form-check-label" for="flexCheckDefault">
-                                배가 불러도 계속 먹는다
-                            </label>
-                        </div>
-                        <div class="form-check mb-4">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-                            <label class="form-check-label" for="flexCheckDefault">
-                                자극적인 음식을 즐긴다
-                            </label>
-                        </div>
-                        <div class="form-check mb-4">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-                            <label class="form-check-label" for="flexCheckDefault">
-                                두부, 토마토를 즐기지 않는다
-                            </label>
-                        </div>
-                        <div class="form-check mb-4">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-                            <label class="form-check-label" for="flexCheckDefault">
-                                식사 후 금방 허기진다
-                            </label>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-12  mb-5 mx-sm-auto">
-                    <div class="form-check mb-4">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-                        <label class="form-check-label" for="flexCheckDefault">
-                            아침식사를 3회이상 거른다
-                        </label>
-                    </div>
-                    <div class="form-check mb-4">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-                        <label class="form-check-label" for="flexCheckDefault">
-                            기름진 음식을 자주 먹는다
-                        </label>
-                    </div>
-                    <div class="form-check mb-4">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-                        <label class="form-check-label" for="flexCheckDefault">
-                            여러 색의 채소를 챙겨먹기 힘들다
-                        </label>
-                    </div>
-                    <div class="form-check mb-4">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-                        <label class="form-check-label" for="flexCheckDefault">
-                            흰쌀밥을 즐겨 먹는다
-                        </label>
-                    </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-12  mb-5">&nbsp;</div>
-                </div>
-            </div>
-            <!-- 질병 end -->
-            <div class="custom-end-btn mb-c mt-5 pt-5 pb-3">
-                <div class="getstarted" id="custom-next-2">
-                    다음
-                </div>
-            </div>
-        </div>
-        <!-- container-end -->
-        <div class="container custom-q-3 mx-auto">
-            <div class="row">
-                <p id="result"></p>
-            </div>
-        </div>
-        <!-- container-end -->
+            <h2 class="text-center mt-5 font2" id="title">정확한 분석을 위해 <br>당신의 성별을 선택해주세요!</h2>
+            <input type="hidden" value="EI" id="type">
+            <button id="A" type="button" class="btn  btn-dark mt-5 font line-height-btn">여자</button>
+            <button id="B" type="button" class="btn  btn-dark mt-5 font line-height-btn">남자</button>
+        </article>
+        <article class="result text-center">
+            <h2 id="animal" class="mt-5 font2">이름</h2>
+            <h2 id="mbti-name" class="mt-5 font2">mbti-name</h2>
+            <p id="explain" class="mt-5 font2">설명</p>
+            <img src="images/11.gif" alt="오버액션토끼" id="img">
+            <p id="mbti-result" class="mt-5 font">MBTI</p>
+        </article>
+        
+        <input type="hidden" value="0" id="EI">
+        <input type="hidden" value="0" id="SN">
+        <input type="hidden" value="0" id="TF">
+        <input type="hidden" value="0" id="JP">
+      </div>
     </section>
       <!-- ======= Footer ======= -->
   <footer class="footer-pc" id="footer-pc">
