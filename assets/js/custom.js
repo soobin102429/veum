@@ -1,18 +1,17 @@
 var num=1;
 
 var q={
-    1: {"title":"친구와 큰 오해가 생겨서 다툰 후, 해결하려고 할 때 당신의 선택은?","type":"EI","A":"일단 만나서 얘기하자고 한다.","B":"진심을 담은 카톡으로 대화를 신청한다."},
-    2: {"title":"친구가 요즘 넷플릭스에서<br> 볼만한 것이 있는지 물어본다.<br> 당신의 대답은?","type":"EI","A":"어떤 장르, 배우가 좋은지 먼저 물어본다.","B":"내가 최근 본 것들을 바탕으로 추천해준다."},
-    3: {"title":"당신이 친구와 식당에 갔을 때<br> 메뉴를 고르는 방식은?","type":"EI","A":"친구에게 먹고 싶은 메뉴가 없는지 먼저 물어본다.","B":"맛있어 보이는 메뉴를 골라 친구에게 물어본다."},
-    4: {"title":"친구와 리뷰를 보고 찾아온 맛집의 대기시간이 1시간 이상이라면?","type":"EI","A":"포기하고 근처 다른 식당을 찾는다.","B":"기다려서라도 그 맛을 확인하고 간다."},
-    5: {"title":"친구가 술 한 잔 하자고 한다.<br>어떤 술집으로 갈까?","type":"EI","A":"조용하고 아늑한 분위기의 술집","B":"시끄럽고 화려한 분위기의 술집"},
-    6: {"title":"친구가 한 번도 시도해본 적 없던 <br>옷스타일을 제안한다면?","type":"EI","A":"급격한 변화는 부담스러우니 천천히 생각해본다.","B":"친구 말을 믿고 도전해본다."},
-    7: {"title":"친구가 만나기로 한 약속 장소까지<br> 가는 법을 물어본다면?","type":"TF","A":"장소까지 찾아오는 방법을 상세하고 자세히 설명한다.","B":"큰 건물을 알려주고 근처와서 전화하라고 한다."},
-    8: {"title":"친구와 여행을 가기로하고,<br> 여행 계획은 내가 짜기로 했다면?","type":"TF","A":"사전에 꼼꼼하게 계획을 세운다.","B":"중요한 것만 미리 정해놓고 나머지는 가서 생각한다."},
-    9: {"title":"오랜만에 휴가를 '하루'를 얻었다.<br> 어떻게 보낼까?","type":"TF","A":"집에서 여유롭게 지낸다.","B":"친구들과 약속을 잡고 신나게 논다."},
-    10: {"title":"타로 점이 안좋게 나온 친구에게 <br>당신이 해줄 위로의 말은?","type":"JP","A":"다른 곳에 가서 다시 한 번 받아보자고 한다.","B":"다 미신이라며 믿지말라고 한다."},
-    11: {"title":"친구가 알바해 모은 돈으로 <br>해외여행 간다고 연락이 왔다.<br> 나의 첫번째 질문은?","type":"JP","A":"어떤 방법으로 어떻게 모았는지를 묻는다.","B":"모은 액수와 여행 목적지를 묻는다."},
-    12: {"title":"집 가구를 조립하던 중 친구에게<br> 지금 만나자는 연락이 왔다면?","type":"JP","A":"먼저 친구를 만나고와서 나머지 조립을 완성한다.","B":"하던 조립을 완성하고 친구를 만나러 간다."}
+    1: {"title":"평소 활동량을 체크해주세요.","type":"ABCD","A":"운동 거의안함.","B":"가벼운 산택정도","C":"숨이 찰 정도","D":"땀이 날 정도"},
+    2: {"title":"흡연여부를 선택해주세요.","type":"ABCD","A":"피우지 않음","B":"과거흡연","C":"하루 한 갑 미만","D":"하루 한갑 이상"},
+    3: {"title":"과음횟수를 선택해주세요.","type":"ABCD","A":"거의 마시지 않음.","B":"한 달 1회미만","C":"한달 1회 이상 주 2회 미만","D":"주2회 이상"},
+    4: {"title":"다음 중 진단 받은 질환이 있다면 선택해주세요.","type":"TF","A":"해당없음","B":"고지혈증","C":"당뇨","D":"고혈압"},
+    5: {"title":"다음 중 가족력 있는 질환을 선택해주세요.","type":"ABCD","A":"해당없음","B":"고지혈증","C":"당뇨","D":"고혈압"},
+    6: {"title":"대사건강지표를 확인해주세요.","type":"ABCD","A":"해당없음","B":"허리둘레: 90cm 이상","C":"높은 혈당: 100mg/dL이상","D":"높은 혈압: 130mmHg이상"},
+    7: {"title":"해당되는 식생활에 선택해주세요.","type":"ABCD","A":"해당없음","B":"배가 불러도 계속 먹는다.","C":"기름진 음식을 자주 먹는다.","D":"야채를 잘 안챙겨 먹는다."}
+    // 9: {"title":"오랜만에 휴가를 '하루'를 얻었다.<br> 어떻게 보낼까?","type":"TF","A":"집에서 여유롭게 지낸다.","B":"친구들과 약속을 잡고 신나게 논다."},
+    // 10: {"title":"타로 점이 안좋게 나온 친구에게 <br>당신이 해줄 위로의 말은?","type":"JP","A":"다른 곳에 가서 다시 한 번 받아보자고 한다.","B":"다 미신이라며 믿지말라고 한다."},
+    // 11: {"title":"친구가 알바해 모은 돈으로 <br>해외여행 간다고 연락이 왔다.<br> 나의 첫번째 질문은?","type":"JP","A":"어떤 방법으로 어떻게 모았는지를 묻는다.","B":"모은 액수와 여행 목적지를 묻는다."},
+    // 12: {"title":"집 가구를 조립하던 중 친구에게<br> 지금 만나자는 연락이 왔다면?","type":"JP","A":"먼저 친구를 만나고와서 나머지 조립을 완성한다.","B":"하던 조립을 완성하고 친구를 만나러 간다."}
 }
 var result = {
     "ISTJ" : {"animal":"강철멘탈 프로직진러","explain":"책임감이 강하고 친구들에게 항상 믿음직스럽다 기억되는 순수 결정체형 친구","img":"images/13.gif","mbti-result":"당신은 청렴결백, 순수가 그 자체인 순수결정체 타입 입니다! 책임감이 강하고 헌신적인 성향이 강해, 친구들에게 항상 믿음직한 친구로 자리매김하는 소나무 같은 친구 입니다. 실행력이 높은 성향을 가지고 있어 친구들 사이에서 무슨 일을 계획할 때 빠르게 처리하는 장점으로 모임에서 언제나 핵심 구성원이 되기도 합니다. 철저하고 논리적인 편이라 간혹 감정이 없어보인다는 친구들의 오해를 사기도하지만 의외로 연약함은 숨기지 못하는 편이라 금새 오해가 풀리기도 합니다. 정직함이 가장 큰 매력인 당신, 세상이 아무리 불합리하게 느껴져도 그 정직함을 잃지마시길 바랍니다.","mbti-name":"ISTJ"},
@@ -32,10 +31,6 @@ var result = {
     "ENTP" : {"animal":"박찬호급 프로수다러","explain":"생각이 깊고 이해가 빨라 함께 있으면 지루할 틈이 없는 이야기꾼형 친구","img":"images/11.gif","mbti-result":"생각하기를 좋아하고, 사람들과 이야기하기를 좋아하는 타입으로 함께 있으면 대화만으로도 지루함 틈이 없게 만들어주는 친구입니다. 이해가 빠르고, 서로의 관점의 차이도 빠르게 캐치하는 편이라 시시콜콜 같이 수다 떨기에 이보다 더 좋은 친구는 없습니다. 하지만, 가끔씩 논쟁을 즐기기도 하고 성향 자체가 말을 예쁘게 순화하여 돌려 말하기보다 직설적인 대화를 좋아하는 탓에 친구들에게 상처를 주는 경우도 있으니 침착하게 대화하는 방법을 연습해두면 좋습니다. 친구들이 대화가 필요할 때, 제일 먼저 떠올리는 사람은 당신일 겁니다.","mbti-name":"ENTP"},
     "ENFP" : {"animal":"유리멘탈 스폰지밥","explain":"분위기를 주도할 줄 알고 함께 있는 친구들을 웃게 만드는 스트레스 브레이커형 친구","img":"images/12.gif","mbti-result":"친구들 사이에서 분위기를 주도하는 분위기 메이커 타입의 친구입니다. 타인을 즐겁게 하는 것이 곧 자신의 기쁨이기도 해서, 언제나 함께 있는 친구들의 시간을 즐겁게 만들려 노력하는 성향을 가졌습니다. 노는 법을 알기에 주변 사람들을 즐겁게 해주는 것은 물론, 본인의 스트레스까지 잘 해소하기 때문에 항상 밝고 에너지 넘치는 모습으로 주변에 친구들이 끊이지 않는 편입니다. 다만, 지루함을 견디지 못하는 편이라 진지하거나 진중한 분위기는 어려워하는 경향을 가지고 있기도 합니다. 직관에 의지하고 행동하는 탓에 간혹 오해를 만들기도 하지만, 당신의 밝고 활기찬 에너지는 언제나 친구들에게 큰 힘이 된다는 사실을 잊지 마세요!","mbti-name":"ENFP"}
 }
-// function start(){
-//     $(".start").hide();
-//     $(".health").show();
-// }
 function start() { 
     var checkBox = document.getElementById("all_agree");
     if (checkBox.checked == true){
@@ -49,34 +44,42 @@ function healthy(){
     $(".health").hide();
     $(".question").show();
 }
-function A()  {
-    const target = document.getElementById('question_next');
-    target.disabled = false;
-}
-function B()  {
-    const target = document.getElementById('question_next');
-    target.disabled = false;
-}
+
 $("#A").click(function(){
   var type= $("#type").val();
   var preValue = $("#"+type).val();
   $("#"+type).val(parseInt(preValue)+1);
-//   next();
 });
-// $("#B").click(function(){
-//     next();
-// });
 $("#question_next").click(function(){
     next();
     const target = document.getElementById('question_next');
     target.disabled = true;
+    target.style.background='#fff';
+    target.style.color='#000';
 });
 $("#title").click(function(){
     next();
 });
+(function() {
+    $('.reqrd').keyup(function() {
+
+        var isEmpty = false;
+        $('.reqrd').each(function() {
+            if ($(this).val() == '') {
+                isEmpty = true;
+            }
+        });
+
+        if (isEmpty) {
+            $('#healthy').prop('disabled', true);
+        } else {
+            $('#healthy').removeAttr('disabled');
+        }
+    });
+})();
 
 function next(){
-    if(num==13){
+    if(num==7){
         $(".question").hide();
         $(".result").show();
         $(".bmi").show();
@@ -87,14 +90,14 @@ function next(){
         $(".custom-steps-2-m").removeClass("custom-steps-active-m");
         $(".custom-steps-3-m").addClass("custom-steps-active-m");
         var mbti = "";
-        // if($("#EFGH").val()<1){
-        //     mbti+="E"
-        // } else if($("#EFGH").val()<2)
-        //     mbti+="F"
-        // } else if($("#EFGH").val()<3){
-        //     mbti+="G"
+        // if($("#ABCD").val()<1){
+        //     mbti+="A"
+        // } else if($("#ABCD").val()<2)
+        //     mbti+="B"
+        // } else if($("#ABCD").val()<3){
+        //     mbti+="C"
         // } else{
-        //     mbti+="H"
+        //     mbti+="D"
         // }
         // if($("#IGKL").val()<1){
         //     mbti+="I"
@@ -123,10 +126,10 @@ function next(){
         // } else{
         //     mbti+="T"
         // }
-        ($("#EI").val() < 2 )? mbti+="I" : mbti+="E";
-        ($("#SN").val() < 2 )? mbti+="N" : mbti+="S";
-        ($("#TF").val() < 2 )? mbti+="F" : mbti+="T";
-        ($("#JP").val() < 2 )? mbti+="P" : mbti+="J";
+        // ($("#EI").val() < 2 )? mbti+="I" : mbti+="E";
+        // ($("#SN").val() < 2 )? mbti+="N" : mbti+="S";
+        // ($("#TF").val() < 2 )? mbti+="F" : mbti+="T";
+        // ($("#JP").val() < 2 )? mbti+="P" : mbti+="J";
         // 삼항연산자
         // alert(mbti);
         $("#img").attr("src",result[mbti]["img"]);
@@ -141,10 +144,79 @@ function next(){
         $("#type").val(q[num]["type"]);
         $("#A").html(q[num]["A"]);
         $("#B").html(q[num]["B"]);
+        $("#C").html(q[num]["C"]);
+        $("#D").html(q[num]["D"]);
     num++;
     }
 }
+function A()  {
+    const target = document.getElementById('question_next');
+    target.style.background='#215844';
+    target.style.color='#fff';
+    target.disabled = false;
+    if (typeof(Storage) !== "undefined") {
+        if (localStorage.clickcount) {
+          localStorage.clickcount = Number(localStorage.clickcount)+1;
+        } else {
+          localStorage.clickcount = 1;
+        }
+        document.getElementById("Ai").innerHTML = localStorage.clickcount;
+      }
+}
+function B()  {
+    const target = document.getElementById('question_next');
+    target.disabled = false;
+    target.style.background='#215844';
+    target.style.color='#fff';
+    if (typeof(Storage) !== "undefined") {
+        if (localStorage.clickcount) {
+          localStorage.clickcount = Number(localStorage.clickcount)+1;
+        } else {
+          localStorage.clickcount = 1;
+        }
+        document.getElementById("Bi").innerHTML = localStorage.clickcount;
+      }
+}
+function C()  {
+    const target = document.getElementById('question_next');
+    target.style.background='#215844';
+    target.style.color='#fff';
+    target.disabled = false;
+    if (typeof(Storage) !== "undefined") {
+        if (localStorage.clickcount) {
+          localStorage.clickcount = Number(localStorage.clickcount)+1;
+        } else {
+          localStorage.clickcount = 1;
+        }
+        document.getElementById("Ci").innerHTML = localStorage.clickcount;
+      }
+}
+function D()  {
+    const target = document.getElementById('question_next');
+    target.disabled = false;
+    target.style.background='#215844';
+    target.style.color='#fff';
+    if (typeof(Storage) !== "undefined") {
+        if (localStorage.clickcount) {
+          localStorage.clickcount = Number(localStorage.clickcount)+1;
+        } else {
+          localStorage.clickcount = 1;
+        }
+        document.getElementById("Di").innerHTML = localStorage.clickcount;
+      }
+}
 
+var btnContainerb = document.getElementById("cb1");
+    var btnsb = btnContainerb.getElementsByClassName("c1");
+    for (var i = 0; i < btnsb.length; i++) {
+    btnsb[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("activeb");
+        if (current.length > 0) {
+        current[0].className = current[0].className.replace(" activeb", "");
+        }
+        this.className += " activeb";
+    });
+    }
 $('#healthy').click(function(){
     $(".custom-steps-2").addClass("custom-steps-active");
     $(".custom-span-2").addClass("main-color");
@@ -153,6 +225,15 @@ $('#healthy').click(function(){
     $(".custom-steps-1-m").removeClass("custom-steps-active-m");
     $(".custom-steps-2-m").addClass("custom-steps-active-m");
     $(".bmi").hide();
+    var age = document.getElementById("age").value;
+    var name = document.getElementById("name").value;
+    var identity = document.querySelector(".activeb").innerText;
+    var outputOne = document.querySelector("#output1");
+    var outputTwo = document.querySelector("#output2");
+    var outputThree = document.querySelector("#output3");
+    outputOne.innerHTML = age + "년생";
+    outputTwo.innerHTML = name + "님의 설문 결과";
+    outputThree.innerHTML = identity + "성";
 });
 
 window.onload = () => {
@@ -163,7 +244,6 @@ window.onload = () => {
     };
 
     function calculateBMI() {
-    
         /* Getting input from user into height variable.
         Input is string so typecasting is necessary. */
         let height = parseInt(document
@@ -193,25 +273,14 @@ window.onload = () => {
     
             // Dividing as per the bmi conditions
             if (bmi < 18.6) result.innerHTML =
-                `저체중 : <span>${bmi}</span>`;
+                `BMI : <span>${bmi}</span>(저체중)`;
     
             else if (bmi >= 18.6 && bmi < 24.9) 
                 result.innerHTML = 
-                    `정상체중 : <span>${bmi}</span>`;
+                    `BMI : <span>${bmi}</span>(정상)`;
     
             else result.innerHTML =
-                `과체중 : <span>${bmi}</span>`;
+                `BMI : <span>${bmi}</span>(과체중)`;
         }
     };
 // bmi end
-var btnContainerb = document.getElementById("cb1");
-    var btnsb = btnContainerb.getElementsByClassName("c1");
-    for (var i = 0; i < btnsb.length; i++) {
-    btnsb[i].addEventListener("click", function() {
-        var current = document.getElementsByClassName("activeb");
-        if (current.length > 0) {
-        current[0].className = current[0].className.replace(" activeb", "");
-        }
-        this.className += " activeb";
-    });
-    }

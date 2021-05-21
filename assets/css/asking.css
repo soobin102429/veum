@@ -635,6 +635,15 @@ custom html Start
   background-color: #215644;
   width: 25%;
 }
+#customized .line-height-btn2{
+  line-height: 50px;
+  background-color: #215644;
+  width: 25%;
+}
+#customized .line-height-btn1:hover{
+  border: 1px solid #215644;
+  box-shadow: 0 14px 26px -12px rgb(33 86 68 / 42%), 0 4px 23px 0px rgb(0 0 0 / 12%), 0 8px 10px -5px rgb(33 86 68 / 20%);
+}
 #customized .enter-custom{
   display: none;
 }
@@ -656,7 +665,7 @@ custom html Start
   background-color: #215644 !important;
 }
 #customized .btn-dark1{
-  background-color: #fff !important;
+  background-color: #fff;
   border: 1px solid #707070;
   color: #000;
 }
@@ -763,6 +772,17 @@ custom html Start
   background: rgb(255, 255, 255);
   padding: 30px 0;
   color: black;
+}
+#customized #mbti-name{
+  color: #000;
+}
+#customized .output-wrap{
+    margin: 80px auto 0;
+    background: #524641;
+    padding: 40px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
 }
 @media(max-width: 709px){
   .custom-navbar-pc{

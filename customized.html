@@ -185,22 +185,27 @@
             </nav><!-- .navbar -->
           </div>
           <!-- title end -->
-          <div class="container mx-auto text-center">
+          <div class="container mx-auto text-center pt-5 pb-5">
             <div class="row text-center mx-auto">
-              <h2 class="custom-q-title mb-c mt-4">식사를 드시는 분</h2>
+              <h5 class="custom-q-ex mb-c">
+                식단 드시는 분의 성함을 입력해주세요.
+              </h5>
+              <div class="custom-type-wrap d-flex justify-content-center mx-auto mb-c">
+                <input type="text" class="custom-type reqrd" name="name" placeholder="홍길동" id ="name">
+            </div>
               <h5 class="custom-q-ex mb-c">
                   식단 드시는 분의 성별이 어떻게 되나요?
               </h5>
               <div class="custom-btn-wrap d-flex justify-content-center mb-c" id="cb1">
-                  <div class="custom-btn-c c1" role="button">남</div>
-                  <div class="custom-btn-c c1 btn-ml" role="button">여</div>
+                  <div class="custom-btn-c c1" role="button" value="남" id="boy">남</div>
+                  <div class="custom-btn-c c1 btn-ml" role="button" value="여" id="girl">여</div>
               </div>
               <!-- 성별 end -->
               <h5 class="custom-q-ex mb-c">
                   식단을 드시는 분은 몇 년생이신가요? <span class="custom-q-d">(예: 1996년)</span>
               </h5>
               <div class="custom-type-wrap d-flex justify-content-center mx-auto mb-c">
-                  <input type="tel" class="custom-type" name="bornYear" placeholder="예: 1990" maxlength="4" id ="age">
+                  <input type="tel" class="custom-type reqrd" name="bornYear" placeholder="예: 1990" maxlength="4" id ="age">
                   <span class="custom-q-dt">년</span>
               </div>
               <!-- 생년 end -->
@@ -208,18 +213,18 @@
                   식단 드시는 분의 키와 몸무게를 입력해주세요.
               </h5>
               <div class="custom-type-wrap d-flex justify-content-center mx-auto mb-c">
-                  <input type="tel" class="custom-type" name="cm" placeholder="예: 165" maxlength="3" id ="height">
+                  <input type="tel" class="custom-type reqrd" name="cm" placeholder="예: 165" maxlength="3" id ="height">
                   <span class="custom-q-dt">m</span>
               </div>
               <div class="clearfix"></div>
               <div class="custom-type-wrap d-flex justify-content-center mx-auto mb-c">
-                  <input type="tel" class="custom-type" name="kg" placeholder="예: 68" maxlength="3" id ="weight">
+                  <input type="tel" class="custom-type reqrd" name="kg" placeholder="예: 68" maxlength="3" id ="weight">
                   <span class="custom-q-dt">kg</span>
               </div>
               <!-- 키 몸무계 end -->
           </div>
 
-            <button type="button" id="healthy" class="mx-auto btn btn-dark mt-5 font line-height-btn1" onclick="healthy();">다음</button>
+            <button type="button" id="healthy" class="mx-auto btn btn-dark mt-5 font line-height-btn1" onclick="healthy();" disabled>다음</button>
             <p class="mt-4 agree-ex">* 본 설문결과는 의사의 처방을 대신하지 않습니다.</p>
           </div>
         </article>
@@ -277,21 +282,35 @@
                 <div class="progress-bar" role="progressbar" style="width: calc(100/12*1%)" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
             <h2 class="text-center mt-5 font2" id="title">정확한 분석을 위해 <br>당신의 성별을 선택해주세요!</h2>
-            <input type="hidden" value="0" id="EFGH">
+            <input type="hidden" value="0" id="ABCD">
             <button id="A" type="button" class="btn  btn-dark mt-5 font line-height-btn" onclick="A();">여자</button>
             <button id="B" type="button" class="btn  btn-dark mt-5 font line-height-btn" onclick="B();">남자</button>
-            <button type="button" id="question_prev" class="mx-auto btn btn-dark2 mt-5 font line-height-btn1" onclick="goBack();">이전</button>
-            <button type="button" id="question_next" class="mx-auto btn btn-dark1 mt-5 font line-height-btn1" onclick="question_next();" disabled>다음</button>
+            <button id="C" type="button" class="btn  btn-dark mt-5 font line-height-btn" onclick="C();">돼지</button>
+            <button id="D" type="button" class="btn  btn-dark mt-5 font line-height-btn" onclick="D();">공주</button>
+            <div id="Ai"></div>
+            <div id="Bi"></div>
+            <div id="Ci"></div>
+            <div id="Di"></div>
+            <button type="button" id="question_prev" class="mx-auto btn btn-dark2 mt-5 font line-height-btn2" onclick="goBack();">이전</button>
+            <button type="button" id="question_next" class="mx-auto btn btn-dark1 mt-5 font line-height-btn2" disabled>다음</button>
             </div>
         </article>
         <article class="result text-center">
           <div class="custom-title text-center mb-5 mt-5">
-            <h2>고객님이 알려주신 건강정보를 토대로</h2>
-            <h2 class="mb-2"><span class="main-color"> 1:1 맞춤식단</span>이 만들어집니다.</h2>
-            <p>번거롭더라도 반드시 선택 / 입력 바랍니다.
-                <br>
-                * 약 3분정도 소요됩니다!
-            </p>
+            <h2 id="output2"></h2>
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <ul class="list-unstyled d-flex align-items-center justify-content-evenly output-wrap">
+                    <li id="output3"></li>
+                    <li>|</li>
+                    <li id="output1"></li>
+                    <li>|</li>
+                    <li id="bmi"></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           <nav id="custom-navbar-pc" class="custom-navbar-pc mx-auto">
               <div class="custom-header d-flex align-items-center justify-content-center" id="cb7">
                   <div class="custom-steps-wrap">
@@ -339,14 +358,13 @@
             <p id="explain" class="mt-5 font2">설명</p>
             <img src="images/11.gif" alt="오버액션토끼" id="img">
             <p id="mbti-result" class="mt-5 font">MBTI</p>
-            <p id="bmi"></p>
+            
           </div>
         </article>
       
-        <input type="hidden" value="0" id="EFGH">
-        <input type="hidden" value="0" id="IGKL">
-        <input type="hidden" value="0" id="MNOP">
-        <input type="hidden" value="0" id="QRST">
+        <input type="hidden" value="0" id="ABCD">
+        <!-- <input type="hidden" value="0" id="EFGH">
+        <input type="hidden" value="0" id="IGKL"> -->
       </div>
     </section>
       <!-- ======= Footer ======= -->
