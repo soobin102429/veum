@@ -462,13 +462,276 @@ notice html end
 custom html Start
 ---------------------------------------------------------------
  */
+#customized {
+  padding: 50px 0;
+}
 #customized article{
   display: flex;
   flex-direction: column;
   margin: auto auto;
 }
+#customized .custom-q-ex{
+  color: #444;
+  font-weight: 400;
+}
+#customized .custom-q-d{
+  color: #999;
+}
+#customized .mb-c {
+  margin-bottom: 30px;
+}
+#customized .custom-btn-c-b:hover{
+  color: #215644;
+}
+.activeb{
+  background-color: #215644;
+  color: #fff !important;
+}
+#customized .btn-ml{
+  margin-left: 10px;
+}
+#customized .custom-btn-c {
+  border: 1px solid #d9d9d9;
+  border-radius: 4px 0 0 4px;
+  width: 15%;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #555;
+}
+.form-check-input:checked {
+  background-color: #215844 !important;
+  border-color: #215844 !important;
+}
+.form-mr{
+  margin-right: 5%;
+}
+#customized .form-check{
+  text-align: left;
+}
+#customized .custom-type-wrap{
+  border: 1px solid #d9d9d9;
+  border-radius: .25rem;
+  width: 30%;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #555;
+}
+#customized .custom-type-wrap:hover, .custom-type-wrap:focus{
+  border: 1px solid #318468;
+}
+#customized .custom-type{
+  border: none;
+  box-shadow: none;
+  width: 230px;
+}
+#customized .custom-type:focus, .custom-type:hover{
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+/* 프로그레스 */
+#customized .custom-steps-connect{
+  width: 7.5rem;
+  height: 1px;
+  background: rgb(189, 189, 189);
+  margin: 0 1rem;
+ }
+ #customized .custom-steps-active{
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background: #fff !important;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #318468 !important;
+    text-align: center;
+    line-height: 25px;
+    padding: 4px 12px;
+    margin-right: 1rem;
+ }
+ #customized  .custom-steps-wrap .main-color{
+   color: white !important;
+   font-weight: 400;
+ }
+ #customized .custom-steps{
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  border: 1px solid #fff;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #fff;
+  text-align: center;
+  line-height: 25px;
+  margin-right: 1rem;
+  padding: 4px 12px;
+}
+#customized .custom-steps-wrap span{
+  color: #fff;
+  font-weight: 400;
+  font-size: 1rem;
+}
+/* pc end */
+#custom-navbar-mobile{
+  display: none;
+}
+#customized .custom-steps-connect-m{
+  width: 2.5rem;
+  height: 1px;
+  background: rgb(189, 189, 189);
+  margin: 0 0.4rem;
+ }
+ #customized  .custom-steps-active-m{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background: #fff !important;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #3c9a7b !important;
+    text-align: center;
+    line-height: 18px;
+    padding: 3px 10.5px;
+    margin-right: 0.4rem;
+ }
+ #customized .custom-steps-m{
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  border: 1px solid #fff;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #fff;
+  text-align: center;
+  line-height: 18px;
+  margin-right: 0.4rem;
+  padding: 3px 10.5px;
+}
+#customized  .custom-steps-wrap-m span{
+  color: white;
+  font-weight: 400;
+  font-size: 1rem;
+}
+/* 제목 */
+#customized .custom-title{
+  width: 100%;
+  background: #215644;
+  padding: 65px 0;
+}
+#customized .custom-icon{
+  width: 150px;
+}
+#customized .start-info{
+  background: white;
+  box-shadow: 0px 0 5px rgba(1, 41, 112, 0.08);
+}
+#customized .main-color {
+  color: #318468 !important;
+}
+#customized .line-height-btn1{
+  line-height: 50px;
+  background-color: #215644;
+  width: 25%;
+}
+#customized .enter-custom{
+  display: none;
+}
+/* question */
+#customized #title{
+  font-size: 2rem;
+  line-height: 3rem;
+  color: black;
+}
+#customized .line-height-btn{
+  line-height: 50px;
+  background-color: #215644;
+  width: 100%;
+}
+#customized .line-height-btn:hover{
+  background-color: #215644;
+}
+#customized .btn-dark{
+  background-color: #215644 !important;
+}
+#customized .btn-dark1{
+  background-color: #fff !important;
+  border: 1px solid #707070;
+  color: #000;
+}
+#customized .btn-dark2{
+  background-color: #707070 !important;
+  border: 1px solid #707070;
+  color: #fff;
+}
 #customized .progress-bar{
-  background-color: #333;
+  background-color: #215644;
+}
+/* accordian  */
+#customized h2 {
+  line-height: 40px;
+  font-weight: 500;
+  padding: 0;
+  color: white;
+}
+#customized .accordion-collapse {
+  border: 0;
+}
+#customized .accordion-button {
+  padding: 20px 30px 20px 30px;
+  font-weight: 400;
+  border: 0;
+  font-size: 16px;
+  color: #444444;
+  text-align: left;
+  border-radius: 9px;
+  box-shadow: 0px 0 5px rgba(1, 41, 112, 0.08);
+}
+#customized .accordion-button:focus {
+  box-shadow: none;
+}
+#customized .accordion-button:not(.collapsed) {
+  background: none;
+  color: #215644;
+  border-bottom: 0;
+}
+#customized .accordion-body {
+  padding: 75px 80px 80px;
+  border: 0;
+  box-shadow: 0px 0 5px rgba(1, 41, 112, 0.08);
+}
+#customized h4{
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 700;
+}
+#customized .agree-ex{
+  padding: 0;
+  margin: 2px;
+  font-size: 14px;
+  color: #777;
+}
+#customized th{
+  font-weight: normal;
+  color: #777;
+  font-size: 14px;
+}
+#customized td{
+  color: #221815;
+  font-size: 14px;
+  font-weight: normal;
+}
+#customized .all-agree-box input, label{
+  cursor: pointer;
+}
+#customized .all-agree-box {
+  border: none;
+}
+
+/* show hide */
+#customized .health{
+  display: none;
 }
 #customized .question{
   display: none;
@@ -476,9 +739,9 @@ custom html Start
 #customized .result{
   display: none;
 }
-#customized #title{
-  font-size: 2rem;
-  line-height: 3rem;
+/* result */
+#customized #explain{
+  font-size: 15px;
 }
 #customized .title,#animal{
   font-family: 'Noto Sans KR', sans-serif;
@@ -494,29 +757,6 @@ custom html Start
   font-weight: 600;
   letter-spacing: 1px;
 }
-#customized .line-height-btn{
-  line-height: 50px;
-  border-radius: 15px;
-  background-color: rgb(9, 9, 9);
-}
-#customized .line-height-btn:hover{
-  background-color: #000;
-}
-#customized .btn-dark{
-  background-color: black !important;
-}
-#customized #img{
-  width: 300px;
-  height: 300px;
-  margin: 0 auto;
-  -webkit-user-drag: none;
-}
-#customized #img2{
-  width: 300px;
-  height: 300px;
-  margin: 0 auto;
-  -webkit-user-drag: none;
-}
 #customized #mbti-result{
   text-align: left !important;
   line-height: 25px;
@@ -524,17 +764,204 @@ custom html Start
   padding: 30px 0;
   color: black;
 }
-#customized #explain{
-  font-size: 15px;
+@media(max-width: 709px){
+  .custom-navbar-pc{
+    display: none;
+  }
+  .custom-navbar-mobile{
+    display: block !important;
+  }
 }
-#customized .logo{
-  width: 70px;
-  margin: 0 auto;
-  position: relative;
-  padding-top: 40%;
-  bottom: 0;
+@media(max-width: 769px){
+  #customized h4 {
+    font-size: 21px;
 }
-
+  #customized .line-height-btn1 {
+    line-height: 35px;
+    width: 20%;
+}
+#customized .agree-ex {
+  font-size: 12px;
+}
+#customized th {
+  font-size: 12px;
+}
+#customized td {
+  font-size: 12px;
+}
+  /* main */
+  #customized .custom-type-wrap {
+    width: 64%;
+    height: 70px;
+    line-height: 70px;
+    font-size: 1rem;
+}
+#customized .custom-btn-c {
+  width: 32%;
+  height: 70px;
+  line-height: 70px;
+  font-size: 1rem;
+}
+  /* 1 */
+  /* 2 */
+  /* 3 */
+}
+@media(max-width:541px){
+  #customized .custom-icon {
+    width: 95px;
+}
+  #customized .arrow{
+    width: 20px;
+    height: 30px;
+}
+#customized .enter-custom{
+  display: block;
+}
+#customized .accordion-body {
+  padding: 60px 10px 60px;
+}
+#customized .agree-ex {
+  font-size: 10px;
+}
+#customized .title{
+  font-size: 14px;
+}
+#customized strong{
+  font-size: 14px;
+}
+#customized h4 {
+  font-size: 19px;
+}
+#customized .line-height-btn1 {
+  line-height: 36px;
+  width: 28%;
+}
+#customized th {
+  font-size: 10px;
+}
+#customized td {
+  font-size: 10px;
+}
+   /* main */
+  /* 1 */
+  /* 2 */
+  /* 3 */
+}
+@media(max-width:441px){
+#customized h2 {
+    font-size: 22px;
+    line-height: 30px;
+}
+#customized p{
+  font-size: 12px;
+}
+#customized .custom-icon {
+    width: 73px;
+}
+#customized .p-5 {
+  padding: 1rem!important;
+}
+#customized .arrow {
+  width: 10px;
+  height: 16px;
+}
+#customized .accordion-body {
+  padding: 60px 10px 0px;
+}
+#customized th {
+  width: 33%;
+}
+#customized strong {
+  font-size: 12px;
+}
+#customized .title {
+    font-size: 12px;
+}
+#customized h4 {
+  font-size: 13px;
+}
+.radio-gr input[type=checkbox] + label, .radio-gr input[type=radio] + label {
+  font-size: 12px;
+  line-height: 22px;
+}
+#customized .line-height-btn1 {
+  line-height: 27px;
+  width: 30%;
+  font-size: 14px;
+}
+  /* main */
+  #customized .custom-steps-m {
+    width: 18px;
+    height: 18px;
+    line-height: 21px;
+    padding: 1px 8.5px;
+}
+ /* 1 */
+ /* 2 */
+ /* 3 */
+}
+@media(max-width:361px){
+  #customized h2 {
+    font-size: 18px;
+    line-height: 25px;
+}
+#customized .accordion-button {
+  padding: 15px 5px 15px 4px;
+}
+.accordion-button::after {
+  width: 0.8rem;
+  height: 0.8rem;
+}
+.accordion-button::after {
+  flex-shrink: 0;
+  width: 0.8rem;
+  height: 0.8rem;
+  background-size: 0.8rem;
+}
+#customized .line-height-btn1 {
+  line-height: 25px;
+  width: 40%;
+}
+  /* main */
+ /* 1 */
+ /* 2 */
+ /* 3 */
+}
+@media(max-width:281px){
+  #customized .custom-title {
+    padding: 60px 0 45px;
+}
+#customized h2 {
+    font-size: 17px;
+    line-height: 20px;
+}
+#customized .custom-icon {
+    width: 44px;
+}
+#customized .title {
+  font-size: 10px;
+}
+#customized strong {
+    font-size: 10px;
+}
+#customized th {
+  width: 35%;
+}
+.all-agree-box {
+  margin-right: 0;
+  padding: 1px 1px 30px;
+  border: 1px solid #d9d9d9;
+}
+#customized .line-height-btn1 {
+  line-height: 20px;
+  width: 36%;
+  font-size: 12px;
+}
+  /* main */
+ /* 1 */
+ /* 2 */
+ /* 3 */
+}
 /* --------------------------------------------------------------
 custom html end 
 ---------------------------------------------------------------

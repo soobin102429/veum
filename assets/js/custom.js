@@ -32,18 +32,44 @@ var result = {
     "ENTP" : {"animal":"박찬호급 프로수다러","explain":"생각이 깊고 이해가 빨라 함께 있으면 지루할 틈이 없는 이야기꾼형 친구","img":"images/11.gif","mbti-result":"생각하기를 좋아하고, 사람들과 이야기하기를 좋아하는 타입으로 함께 있으면 대화만으로도 지루함 틈이 없게 만들어주는 친구입니다. 이해가 빠르고, 서로의 관점의 차이도 빠르게 캐치하는 편이라 시시콜콜 같이 수다 떨기에 이보다 더 좋은 친구는 없습니다. 하지만, 가끔씩 논쟁을 즐기기도 하고 성향 자체가 말을 예쁘게 순화하여 돌려 말하기보다 직설적인 대화를 좋아하는 탓에 친구들에게 상처를 주는 경우도 있으니 침착하게 대화하는 방법을 연습해두면 좋습니다. 친구들이 대화가 필요할 때, 제일 먼저 떠올리는 사람은 당신일 겁니다.","mbti-name":"ENTP"},
     "ENFP" : {"animal":"유리멘탈 스폰지밥","explain":"분위기를 주도할 줄 알고 함께 있는 친구들을 웃게 만드는 스트레스 브레이커형 친구","img":"images/12.gif","mbti-result":"친구들 사이에서 분위기를 주도하는 분위기 메이커 타입의 친구입니다. 타인을 즐겁게 하는 것이 곧 자신의 기쁨이기도 해서, 언제나 함께 있는 친구들의 시간을 즐겁게 만들려 노력하는 성향을 가졌습니다. 노는 법을 알기에 주변 사람들을 즐겁게 해주는 것은 물론, 본인의 스트레스까지 잘 해소하기 때문에 항상 밝고 에너지 넘치는 모습으로 주변에 친구들이 끊이지 않는 편입니다. 다만, 지루함을 견디지 못하는 편이라 진지하거나 진중한 분위기는 어려워하는 경향을 가지고 있기도 합니다. 직관에 의지하고 행동하는 탓에 간혹 오해를 만들기도 하지만, 당신의 밝고 활기찬 에너지는 언제나 친구들에게 큰 힘이 된다는 사실을 잊지 마세요!","mbti-name":"ENFP"}
 }
-function start(){
+// function start(){
+//     $(".start").hide();
+//     $(".health").show();
+// }
+function start() { 
+    var checkBox = document.getElementById("all_agree");
+    if (checkBox.checked == true){
+        $(".start").hide();
+        $(".health").show();
+    } else {
+    alert('개인정보 수집에 동의해주세요.');
+    } }
+function healthy(){
     $(".start").hide();
+    $(".health").hide();
     $(".question").show();
+}
+function A()  {
+    const target = document.getElementById('question_next');
+    target.disabled = false;
+}
+function B()  {
+    const target = document.getElementById('question_next');
+    target.disabled = false;
 }
 $("#A").click(function(){
   var type= $("#type").val();
   var preValue = $("#"+type).val();
   $("#"+type).val(parseInt(preValue)+1);
-  next();
+//   next();
 });
-$("#B").click(function(){
+// $("#B").click(function(){
+//     next();
+// });
+$("#question_next").click(function(){
     next();
+    const target = document.getElementById('question_next');
+    target.disabled = true;
 });
 $("#title").click(function(){
     next();
@@ -53,7 +79,50 @@ function next(){
     if(num==13){
         $(".question").hide();
         $(".result").show();
+        $(".bmi").show();
+        $(".custom-steps-3").addClass("custom-steps-active");
+        $(".custom-span-3").addClass("main-color");
+        $(".custom-steps-2").removeClass("custom-steps-active");
+        $(".custom-span-2").removeClass("main-color");
+        $(".custom-steps-2-m").removeClass("custom-steps-active-m");
+        $(".custom-steps-3-m").addClass("custom-steps-active-m");
         var mbti = "";
+        // if($("#EFGH").val()<1){
+        //     mbti+="E"
+        // } else if($("#EFGH").val()<2)
+        //     mbti+="F"
+        // } else if($("#EFGH").val()<3){
+        //     mbti+="G"
+        // } else{
+        //     mbti+="H"
+        // }
+        // if($("#IGKL").val()<1){
+        //     mbti+="I"
+        // } else if($("#IGKL").val()<2)
+        //     mbti+="G"
+        // } else if($("#IGKL").val()<3){
+        //     mbti+="K"
+        // } else{
+        //     mbti+="L"
+        // }
+        // if($("#MNOP").val()<1){
+        //     mbti+="M"
+        // } else if($("#MNOP").val()<2)
+        //     mbti+="N"
+        // } else if($("#MNOP").val()<3){
+        //     mbti+="O"
+        // } else{
+        //     mbti+="P"
+        // }
+        // if($("#QRST").val()<1){
+        //     mbti+="Q"
+        // } else if($("#QRST").val()<2)
+        //     mbti+="R"
+        // } else if($("#QRST").val()<3){
+        //     mbti+="S"
+        // } else{
+        //     mbti+="T"
+        // }
         ($("#EI").val() < 2 )? mbti+="I" : mbti+="E";
         ($("#SN").val() < 2 )? mbti+="N" : mbti+="S";
         ($("#TF").val() < 2 )? mbti+="F" : mbti+="T";
@@ -75,3 +144,74 @@ function next(){
     num++;
     }
 }
+
+$('#healthy').click(function(){
+    $(".custom-steps-2").addClass("custom-steps-active");
+    $(".custom-span-2").addClass("main-color");
+    $(".custom-steps-1").removeClass("custom-steps-active");
+    $(".custom-span-1").removeClass("main-color");
+    $(".custom-steps-1-m").removeClass("custom-steps-active-m");
+    $(".custom-steps-2-m").addClass("custom-steps-active-m");
+    $(".bmi").hide();
+});
+
+window.onload = () => {
+    let button = document.querySelector("#healthy");
+
+    // Function for calculating BMI
+    button.addEventListener("click", calculateBMI);
+    };
+
+    function calculateBMI() {
+    
+        /* Getting input from user into height variable.
+        Input is string so typecasting is necessary. */
+        let height = parseInt(document
+                .querySelector("#height").value);
+    
+        /* Getting input from user into weight variable. 
+        Input is string so typecasting is necessary.*/
+        let weight = parseInt(document
+                .querySelector("#weight").value);
+    
+        let result = document.querySelector("#bmi");
+    
+        // Checking the user providing a proper
+        // value or not
+        if (height === "" || isNaN(height)) 
+            result.innerHTML = "키를 입력해주세요!";
+    
+        else if (weight === "" || isNaN(weight)) 
+            result.innerHTML = "체중을 입력해주세요!";
+    
+        // If both input is valid, calculate the bmi
+        else {
+    
+            // Fixing upto 2 decimal places
+            let bmi = (weight / ((height * height) 
+                                / 10000)).toFixed(2);
+    
+            // Dividing as per the bmi conditions
+            if (bmi < 18.6) result.innerHTML =
+                `저체중 : <span>${bmi}</span>`;
+    
+            else if (bmi >= 18.6 && bmi < 24.9) 
+                result.innerHTML = 
+                    `정상체중 : <span>${bmi}</span>`;
+    
+            else result.innerHTML =
+                `과체중 : <span>${bmi}</span>`;
+        }
+    };
+// bmi end
+var btnContainerb = document.getElementById("cb1");
+    var btnsb = btnContainerb.getElementsByClassName("c1");
+    for (var i = 0; i < btnsb.length; i++) {
+    btnsb[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("activeb");
+        if (current.length > 0) {
+        current[0].className = current[0].className.replace(" activeb", "");
+        }
+        this.className += " activeb";
+    });
+    }

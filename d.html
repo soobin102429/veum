@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <title>Veum</title>
+      <!-- Favicons -->
+    <link href="assets/img/favicon.ico" rel="icon">
+    <!-- <link href="assets/img/" rel="apple-touch-icon"> -->
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+
+    <!-- Template Main CSS File -->
+   <link rel="stylesheet" href="assets/css/asking.css">
+    <style>
+ .custom-steps-connect{
+  width: 7.5rem;
+  height: 1px;
+  background: rgb(189, 189, 189);
+  margin: 0 1rem;
+ }
+ .custom-steps-active{
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background: #215644 !important;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: white !important;
+    text-align: center;
+    line-height: 25px;
+    padding: 4px 12px;
+    margin-right: 1rem;
+ }
+ .custom .custom-steps-wrap .main-color{
+   color: #215644 !important;
+   font-weight: 400;
+ }
+ .custom-steps{
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  border: 1px solid #999999;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #999999;
+  text-align: center;
+  line-height: 25px;
+  margin-right: 1rem;
+  padding: 4px 12px;
+}
+.custom-steps-wrap span{
+  color: #999;
+  font-weight: 400;
+  font-size: 1rem;
+}
+/* pc end */
+#custom-navbar-mobile{
+  display: none;
+}
+.custom-steps-connect-m{
+  width: 2.5rem;
+  height: 1px;
+  background: rgb(189, 189, 189);
+  margin: 0 0.4rem;
+ }
+ .custom-steps-active-m{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background: #215644 !important;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: white !important;
+    text-align: center;
+    line-height: 18px;
+    padding: 3px 10.5px;
+    margin-right: 0.4rem;
+ }
+ .custom-steps-m{
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  border: 1px solid #999999;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #999999;
+  text-align: center;
+  line-height: 18px;
+  margin-right: 0.4rem;
+  padding: 3px 10.5px;
+}
+.custom-steps-wrap-m span{
+  color: #999;
+  font-weight: 400;
+  font-size: 1rem;
+}
+/* header end */
+#custom{
+  padding-top: 150px;
+}
+#custom h2{
+  line-height: 40px;
+  font-weight: 400;
+  padding: 0;
+}
+#custom p{
+  color: #999;
+  line-height: 25px;
+}
+#custom .main-color{
+  color: #318468 !important;
+}
+/* custom-title end */
+#custom .custom-q-title{
+  font-weight: 500;
+  line-height: 45px;
+}
+#custom .custom-q-ex{
+  color: #444;
+  font-weight: 400;
+}
+#custom .custom-btn-c{
+  border: 1px solid #d9d9d9;
+  border-radius: 4px 0 0 4px;
+  width: 230px;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #555;
+}
+#custom .custom-btn-c-none{
+  border-radius: 4px 0 0 4px;
+  width: 230px;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+#custom .custom-btn-c:hover{
+  color: #318468;
+}
+#custom .mb-c{
+  margin-bottom: 30px;
+}
+#custom .btn-ml{
+  margin-left: 30px;
+}
+#custom .custom-q-d{
+  color: #999;
+}
+#custom .custom-btn-t{
+  border: 1px solid #d9d9d9;
+  border-radius: 4px 0 0 4px;
+  width: 230px;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #555;
+  padding: 0px 10px 0px 10px ;
+}
+#custom .custom-type-wrap{
+  border: 1px solid #d9d9d9;
+  border-radius: 4px 0 0 4px;
+  width: 300px;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #555;
+}
+#custom .custom-type-wrap:hover, .custom-type-wrap:focus{
+  border: 1px solid #318468;
+}
+#custom .custom-type{
+  border: none;
+  box-shadow: none;
+  width: 230px;
+}
+#custom .custom-type:focus, .custom-type:hover{
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+.clearfix{
+  clear: both;
+}
+#custom .custom-type{
+  background-color: none !important;
+}
+#custom .custom-btn-c-b{
+  border: 1px solid #d9d9d9;
+  border-radius: 4px 0 0 4px;
+  width: 400px;
+  height: 120px;
+  text-align: center;
+  line-height: 60px;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #555;
+}
+#custom .custom-btn-c-b:hover{
+  color: #318468;
+}
+#custom .getstarted{
+  width: 400px;
+  padding: 30px 20px;
+  border-radius: 4px 0 0 4px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+#custom .custom-q-2 ,.custom-q-2{
+  display: none;
+}
+.form-check-input:checked {
+  background-color: #215844 !important;
+  border-color: #215844 !important;
+}
+.form-mr{
+  margin-right: 5%;
+}
+#custom .form-check{
+  text-align: left;
+}
+/* ==========active====  */
+.activea,.activeb,.activec,.actived,.activee,.activef{
+  background-color: #318468;
+  color: #fff !important;
+}
+@media (max-width: 992px) {
+  .custom-navbar-pc{
+    display: none;
+  }
+  .custom-navbar-mobile{
+    display: block !important;
+  }
+}
+    </style>
+</head>
+<body class="no-drag">
+    <!-- ======= Header ======= -->
+    <header id="header" class="header custom fixed-top">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+        <a href="index.html" class="logo">
+            <img src="assets/img/logo-g.png" alt="logo">
+        </a>
+
+        <nav id="custom-navbar-pc" class="custom-navbar-pc mx-auto">
+            <div class="custom-header d-flex align-items-center" id="cb7">
+                <div class="custom-steps-wrap">
+                    <span class="custom-steps custom-steps-1 custom-steps-active">1</span>
+                    <span class="custom-span custom-span-1 main-color">기본정보</span>
+                </div>
+                <div class="custom-steps-connect"></div>
+
+                <div class="custom-steps-wrap">
+                    <span class="custom-steps custom-steps-2">2</span>
+                    <span class="custom-span custom-span-2">생활습관</span>
+                </div>
+
+                <div class="custom-steps-connect"></div>
+
+                <div class="custom-steps-wrap">
+                    <span class="custom-steps custom-steps-3">3</span>
+                    <span class="custom-span custom-span-3">진단결과</span>
+                </div>
+            </div>
+        </nav><!-- .navbar -->
+        <nav id="custom-navbar-mobile" class="custom-navbar-mobile float-end">
+            <div class="custom-header d-flex align-items-center">
+                <div class="custom-steps-wrap-m">
+                    <span class="custom-steps-m custom-steps-1-m custom-steps-active-m">1</span>
+                </div>
+                <div class="custom-steps-connect-m"></div>
+
+                <div class="custom-steps-wrap-m">
+                    <span class="custom-steps-m custom-steps-2-m">2</span>
+                </div>
+
+                <div class="custom-steps-connect-m"></div>
+
+                <div class="custom-steps-wrap-m">
+                    <span class="custom-steps-m custom-steps-3-m">3</span>
+                </div>
+            </div>
+        </nav><!-- .navbar -->
+        <a class="getstarted scrollto" href="qna.html">Contact Us</a>
+        </div>
+    </header>
+
+    <section id="custom" class="custom mx-auto">
+        <div class="container custom-q-1 mx-auto">
+            <div class="row custom-title text-center mb-5">
+                <h2>고객님이 알려주신 건강정보를 토대로</h2>
+                <h2 class="mb-2"><span class="main-color"> 1:1 맞춤식단</span>이 만들어집니다.</h2>
+                <p>번거롭더라도 반드시 선택 / 입력 바랍니다.
+                    <br>
+                    * 약 3분정도 소요됩니다!
+                </p>
+            </div>
+            <!-- custom -title end -->
+            <div class="row text-center mb-5 mx-auto" id="cb2">
+                <h2 class="custom-q-title mb-c mt-4">식단을 드시는 분과의 관계</h2>
+                <div class="custom-btn-wrap d-flex justify-content-center mb-3">
+                    <div class="custom-btn-c c2" role="button">본인</div>
+                    <div class="custom-btn-c btn-ml c2" role="button">배우자</div>
+                </div>
+                <div class="custom-btn-wrap d-flex justify-content-center mb-3">
+                    <div class="custom-btn-c c2" role="button">드시는 분의 자녀</div>
+                    <div class="custom-btn-c btn-ml c2" role="button">드시는 분의 부모</div>
+                </div>
+                <div class="custom-btn-wrap d-flex justify-content-center mb-c">
+                    <div class="custom-btn-c c2" role="button">기타</div>
+                    <div class="custom-btn-c-none btn-ml c2" role="button"></div>
+                </div>
+                <!-- 누군지 end -->
+            </div>
+            <!-- 정보 end -->
+            <div class="row text-center mb-5 mx-auto">
+                <h2 class="custom-q-title mb-c mt-4">식사를 드시는 분</h2>
+                <h5 class="custom-q-ex mb-c">
+                    식단 드시는 분의 성별이 어떻게 되나요?
+                </h5>
+                <div class="custom-btn-wrap d-flex justify-content-center mb-c" id="cb1">
+                    <div class="custom-btn-c c1" role="button">남</div>
+                    <div class="custom-btn-c c1 btn-ml" role="button">여</div>
+                </div>
+                <!-- 성별 end -->
+                <h5 class="custom-q-ex mb-c">
+                    식단을 드시는 분은 몇 년생이신가요? <span class="custom-q-d">(예: 1996년)</span>
+                </h5>
+                <div class="custom-type-wrap d-flex justify-content-center mx-auto mb-c">
+                    <input type="tel" class="custom-type" name="bornYear" placeholder="예: 1990" maxlength="4" id ="age">
+                    <span class="custom-q-dt">년</span>
+                </div>
+                <!-- 생년 end -->
+                <h5 class="custom-q-ex mb-c">
+                    식단 드시는 분의 키와 몸무게를 입력해주세요.
+                </h5>
+                <div class="custom-type-wrap d-flex justify-content-center mx-auto mb-c">
+                    <input type="tel" class="custom-type" name="cm" placeholder="예: 165" maxlength="3" id ="height">
+                    <span class="custom-q-dt">m</span>
+                </div>
+                <div class="clearfix"></div>
+                <div class="custom-type-wrap d-flex justify-content-center mx-auto mb-c">
+                    <input type="tel" class="custom-type" name="kg" placeholder="예: 68" maxlength="3" id ="weight">
+                    <span class="custom-q-dt">kg</span>
+                </div>
+                <!-- 키 몸무계 end -->
+            </div>
+            <!-- 건강정보 end -->
+            <div class="row text-center mb-5 mx-auto" id="cb3">
+                <h2 class="custom-q-title mb-c mt-4">식사와 관련하여<br>
+                    병원에서 진단받은 내용이 있나요?</h2>
+                <div class="custom-btn-wrap d-flex justify-content-center mb-3">
+                    <div class="custom-btn-c-b c3" role="button"><strong>네,</strong>병원에서 권장한 식단을 바탕으로 <br>식사 하고싶어요.</div>
+                </div> 
+                <div class="custom-btn-wrap d-flex justify-content-center mb-5">
+                    <div class="custom-btn-c-b c3" role="button"><strong>아니요,</strong>진단 받은 내역이 없어요.<br>일반식 하고싶어요.</div>
+                </div> 
+                <div class="clearfix"></div>
+                <!-- 병원 end -->
+            </div>
+            <div class="custom-notice text-center mb-5 mt-4">
+                <strong class="mb-3">특이사항</strong>
+                <p>당뇨병, 고혈압/이상지혈증, 통풍(요산수치증가)이나<br>
+                   기타 알러지가 있으신 분들은 문의하기를 통해<br>
+                   식사 제한 사항에 대해 알려주세요.
+                </p>
+            </div>
+            <div class="custom-end-btn mb-c mt-5" id="button_1">
+                <div class="getstarted" id="custom-next-1" role="button">
+                    다음
+                </div>
+            </div>
+        </div>
+        <!-- container-end -->
+        <div class="container custom-q-2 mx-auto">
+            <div class="row custom-title text-center mb-5 ct2">
+                <h2>고객님이 알려주신 생활습관을 바탕으로</h2>
+                <h2 class="mb-2"><span class="main-color"> 1:1 맞춤식단</span>이 만들어집니다.</h2>
+                <p>번거롭더라도 반드시 선택 / 입력 바랍니다.
+                    <br>
+                    * 약 1분정도 소요됩니다!
+                </p>
+            </div>
+            <!-- custom -title end -->
+            <div class="row text-center mb-5 mx-auto" id="cb4">
+                <h2 class="custom-q-title mb-c mt-4">흡연 여부를 알려주세요</h2>
+                <div class="custom-btn-wrap d-flex justify-content-center mb-3">
+                    <div class="custom-btn-c c4" role="button" id="a">피우지 않음</div>
+                    <div class="custom-btn-c btn-ml c4" role="button" id="b">과거 흡연</div>
+                </div>
+                <div class="custom-btn-wrap d-flex justify-content-center mb-5">
+                    <div class="custom-btn-c c4" role="button">하루 한 갑 미만</div>
+                    <div class="custom-btn-c btn-ml c4" role="button">하루 한 갑 이상</div>
+                </div>
+                <!-- 흡연 end -->
+                <h2 class="custom-q-title mb-c mt-4">평소 활동량은 얼마나 되나요?</h2>
+                <div class="custom-btn-wrap d-flex justify-content-center mb-5" id="cb5">
+                    <div class="custom-btn-c c5" role="button">운동 안함</div>
+                    <div class="custom-btn-c btn-ml c5" role="button">가벼운 운동</div>
+                    <div class="custom-btn-c btn-ml c5" role="button">땀 날 정도</div>
+                </div>
+                <!-- 활동량 end -->
+                <div id="cb6">
+                    <h2 class="custom-q-title mb-c mt-4">과음 여부를 알려주세요
+                        <span class="custom-q-d">(한번에 5잔이상)</span>
+                    </h2>
+                    <div class="custom-btn-wrap d-flex justify-content-center mb-3">
+                        <div class="custom-btn-c c6" role="button">거의 마시지 않음</div>
+                        <div class="custom-btn-c btn-ml c6" role="button">한달 1회 미만</div>
+                    </div>
+                    <div class="custom-btn-wrap d-flex justify-content-center mb-5">
+                        <div class="custom-btn-c c6" role="button">주 2회 미만</div>
+                        <div class="custom-btn-c btn-ml c6" role="button">주 2회 이상</div>
+                    </div>
+                </div>
+                <!-- 음주 end -->
+            </div>
+            <!-- 생활습관 end -->
+            <div class="text-center mb-5 mx-auto">
+                <h2 class="custom-q-title mb-c mt-4">대사건강지표를 확인해주세요</h2>
+                <div class="form-wrap mx-auto row">
+                    <div class="col-lg-3 col-sm-12">&nbsp;</div>
+                    <div class="col-lg-3 col-sm-12">
+                        <div class="form-check mb-4">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
+                            <label class="form-check-label" for="flexCheckDefault">
+                            모름
+                            </label>
+                        </div>
+                        <div class="form-check mb-4">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
+                            <label class="form-check-label" for="flexCheckDefault">
+                                해당없음
+                            </label>
+                        </div>
+                        <div class="form-check mb-4">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
+                            <label class="form-check-label" for="flexCheckDefault">
+                                높은 혈당 : 공복혈당 100 mg/dL 이상
+                            </label>
+                        </div>
+                        <div class="form-check mb-4">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
+                            <label class="form-check-label" for="flexCheckDefault">
+                                HDL콜레스테롤혈증 : 50mg/dL 미만
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-12">
+                    <div class="form-check mb-4">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
+                        <label class="form-check-label" for="flexCheckDefault">
+                            허리둘레 85 cm 이상 또는 BMI: 25 이상
+                        </label>
+                    </div>
+                    <div class="form-check mb-4">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
+                        <label class="form-check-label" for="flexCheckDefault">
+                            높은 혈압 : 130 mmHg-85 mmHg 이상
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
+                        <label class="form-check-label" for="flexCheckDefault">
+                            높은 중성지방혈증 : 150 mg/dL 이상
+                        </label>
+                    </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-12">&nbsp;</div>
+                </div>
+            </div>
+            <!-- 질병 end -->
+            <div class="row text-center mb-5 mx-auto">
+                <h2 class="custom-q-title mb-c mt-4">다음 중 진단 받는 질환이 있다면 선택해주세요</h2>
+                <div class="custom-form-check  mb-5">
+                    <div class="form-check form-check-inline form-mr">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" />
+                        <label class="form-check-label" for="inlineCheckbox1">해당없음</label>
+                      </div>
+                      
+                      <div class="form-check form-check-inline form-mr">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2" />
+                        <label class="form-check-label" for="inlineCheckbox2">고혈압</label>
+                      </div>
+                      <div class="form-check form-check-inline form-mr">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option3" />
+                        <label class="form-check-label" for="inlineCheckbox2">당뇨</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option4" />
+                        <label class="form-check-label" for="inlineCheckbox2">고지혈증</label>
+                      </div>
+                </div>
+            </div>
+            <!-- 질병 end -->
+            <div class="text-center mb-5 mx-auto">
+                <h2 class="custom-q-title mb-c mt-4">해당되는 식습관에 체크해주세요</h2>
+                <div class="form-wrap mx-auto row  mb-5">
+                    <div class="col-lg-3 col-sm-12">&nbsp;</div>
+                    <div class="col-lg-3 col-sm-12 mx-sm-auto">
+                        <div class="form-check mb-4">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
+                            <label class="form-check-label" for="flexCheckDefault">
+                            해당없음
+                            </label>
+                        </div>
+                        <div class="form-check mb-4">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
+                            <label class="form-check-label" for="flexCheckDefault">
+                                배가 불러도 계속 먹는다
+                            </label>
+                        </div>
+                        <div class="form-check mb-4">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
+                            <label class="form-check-label" for="flexCheckDefault">
+                                자극적인 음식을 즐긴다
+                            </label>
+                        </div>
+                        <div class="form-check mb-4">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
+                            <label class="form-check-label" for="flexCheckDefault">
+                                두부, 토마토를 즐기지 않는다
+                            </label>
+                        </div>
+                        <div class="form-check mb-4">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
+                            <label class="form-check-label" for="flexCheckDefault">
+                                식사 후 금방 허기진다
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-12  mb-5 mx-sm-auto">
+                    <div class="form-check mb-4">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
+                        <label class="form-check-label" for="flexCheckDefault">
+                            아침식사를 3회이상 거른다
+                        </label>
+                    </div>
+                    <div class="form-check mb-4">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
+                        <label class="form-check-label" for="flexCheckDefault">
+                            기름진 음식을 자주 먹는다
+                        </label>
+                    </div>
+                    <div class="form-check mb-4">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
+                        <label class="form-check-label" for="flexCheckDefault">
+                            여러 색의 채소를 챙겨먹기 힘들다
+                        </label>
+                    </div>
+                    <div class="form-check mb-4">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
+                        <label class="form-check-label" for="flexCheckDefault">
+                            흰쌀밥을 즐겨 먹는다
+                        </label>
+                    </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-12  mb-5">&nbsp;</div>
+                </div>
+            </div>
+            <!-- 질병 end -->
+            <div class="custom-end-btn mb-c mt-5 pt-5 pb-3">
+                <div class="getstarted" id="custom-next-2">
+                    다음
+                </div>
+            </div>
+        </div>
+        <!-- container-end -->
+        <div class="container custom-q-3 mx-auto">
+            <div class="row">
+                <p id="result"></p>
+            </div>
+        </div>
+        <!-- container-end -->
+    </section>
+      <!-- ======= Footer ======= -->
+  <footer class="footer-pc" id="footer-pc">
+    <div class="container">
+      <div class="row footer-menu-wrap">
+        <div class="col-lg-4">
+          <ul class="d-flex justify-content-between align-items-center list-unstyled">
+            <li><a href="info-check.html">개인정보처리방침</a></li>
+            <li><a href="#" onclick="return false">이메일수집거부</a></li>
+            <li><a href="#" onclick="return false">사업자정보확인</a></li>
+            <li><a href="serviceform.html">이용약관</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          &nbsp;
+        </div>
+        <div class="col-lg-4 footer-menu-list">
+          <ul class="d-flex justify-content-between align-items-center list-unstyled">
+            <li><a href="FAQ.html">고객센터</a></li>
+            <li><a href="qna.html">문의하기</a></li>
+            <li><a href="notice.html">공지사항</a></li>
+            <li><a href="customized.html">맞춤식단</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row footer-info-wrap d-flex justify-content-center pt-3 pb-4">
+        <div class="col-lg-6 footer-info">
+          <p>
+            <strong>주식회사 비움 컴퍼니</strong><br>
+            <span>김포시 청송로 20 525호, 600호, 601호 대표자: 조수빈</span><br>
+            <span>사업자등록번호: 123-45-678910, 통신판매업신고번호: 2020-서울강남-02333</span><br>
+            <span>개인정보보호책임자: 조수빈(chos@newlhs.com) 고객센터: 981-7828 help@veum.com</span><br>
+            <span>제휴문의: mkt@veum.com</span>
+          </p>
+          <p>Copyright ⓒ2021<strong>Veum</strong>.AllRightsReserved.</p>
+        </div>
+        <div class="col-lg-4">&nbsp;</div>
+        <div class="col-lg-2">
+          <ul class="d-flex align-items-center justify-content-between list-unstyled footer-sns-wrap">
+            <div class="footer-logo">
+              <a href="index.html"><img src="assets/img/logo-w.png" alt="logo"></a>
+            </div>
+            <li><i class="fab fa-facebook-f"></i></li>
+            <li><i class="fab fa-instagram"></i></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer-pc end -->
+  <footer class="footer-mobile" id="footer-mobile">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 d-flex align-items-center justify-content-between">
+          <div class="footer-logo-wrap">
+            <a href="index.html"><img src="assets/img/logo-w.png" alt="logo"></a>
+          </div>
+          <div class="footer-sns-wrap">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+          </div>
+        </div>
+      </div>
+      <!-- row end -->
+      <div class="row">
+        <ul class="footer-menu-wrap mt-3 list-unstyled d-flex align-items-center">
+            <li><a href="FAQ.html">고객센터</a></li>
+            <li><a href="qna.html">문의하기</a></li>
+            <li><a href="notice.html">공지사항</a></li>
+            <li><a href="customized.html">맞춤식단</a></li>
+        </ul>
+          <!-- 사업자정보 -->
+        <div class="accordion accordion-flush" id="faqlist11">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-46">
+                    (주) 비움 컴퍼니 사업자 정보
+                  </button>
+                </h2>
+                <div id="faq2-content-46" class="accordion-collapse collapse" data-bs-parent="#faqlist11">
+                  <div class="accordion-body">
+                     <p>
+                      <strong>주식회사 비움 컴퍼니</strong><br>
+                      <span>김포시 청송로 20 525호, 600호, 601호</span><br>
+                      <span>대표자: 조수빈</span><br>
+                      <span>사업자등록번호: 123-45-678910</span><br>
+                      <span>통신판매업신고번호: 2020-서울강남-02333</span><br>
+                      <span>개인정보보호책임자: 조수빈(chos@newlhs.com)</span><br>
+                      <span>고객센터: 981-7828 help@veum.com</span><br>
+                      <span>제휴문의: mkt@veum.com</span>
+                     </p>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        
+        <!-- 사업자정보 end -->
+        <ul class="footer-info list-unstyled d-flex align-items-center">
+            <li><a href="info-check.html">개인정보처리방침</a></li>
+            <li>|</li>
+            <li><a href="#">이메일수집거부</a></li>
+            <li>|</li>
+            <li><a href="#" onclick="return false">사업자정보확인</a></li>
+            <li>|</li>
+            <li><a href="customized.html">이용약관</a></li>
+        </ul>
+        <p>Copyright ⓒ2021<strong>Veum</strong>.AllRightsReserved.</p>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script>
+    $('#custom-next-1').click(function(){
+    $(".custom-steps-2").addClass("custom-steps-active");
+    $(".custom-span-2").addClass("main-color");
+    $(".custom-steps-1").removeClass("custom-steps-active");
+    $(".custom-span-1").removeClass("main-color");
+    $(".custom-steps-1-m").removeClass("custom-steps-active-m");
+    $(".custom-steps-2-m").addClass("custom-steps-active-m");
+    $('.custom-q-2').css('display','block');
+    $('.custom-q-1').css('display','none');
+    $('#result').css('display','none');
+    });
+    $('#custom-next-2').click(function(){
+    $(".custom-steps-3").addClass("custom-steps-active");
+    $(".custom-span-3").addClass("main-color");
+    $(".custom-steps-2").removeClass("custom-steps-active");
+    $(".custom-span-2").removeClass("main-color");
+    $(".custom-steps-2-m").removeClass("custom-steps-active-m");
+    $(".custom-steps-3-m").addClass("custom-steps-active-m");
+    $('.custom-q-1').css('display','none');
+    $('.custom-q-2').css('display','none');
+    $('#result').css('display','block');
+    });
+    
+
+// bmi 계산
+    window.onload = () => {
+    let button = document.querySelector("#button_1");
+
+    // Function for calculating BMI
+    button.addEventListener("click", calculateBMI);
+    };
+
+    function calculateBMI() {
+    
+        /* Getting input from user into height variable.
+        Input is string so typecasting is necessary. */
+        let height = parseInt(document
+                .querySelector("#height").value);
+    
+        /* Getting input from user into weight variable. 
+        Input is string so typecasting is necessary.*/
+        let weight = parseInt(document
+                .querySelector("#weight").value);
+    
+        let result = document.querySelector("#result");
+    
+        // Checking the user providing a proper
+        // value or not
+        if (height === "" || isNaN(height)) 
+            result.innerHTML = "키를 입력해주세요!";
+    
+        else if (weight === "" || isNaN(weight)) 
+            result.innerHTML = "체중을 입력해주세요!";
+    
+        // If both input is valid, calculate the bmi
+        else {
+    
+            // Fixing upto 2 decimal places
+            let bmi = (weight / ((height * height) 
+                                / 10000)).toFixed(2);
+    
+            // Dividing as per the bmi conditions
+            if (bmi < 18.6) result.innerHTML =
+                `저체중 : <span>${bmi}</span>`;
+    
+            else if (bmi >= 18.6 && bmi < 24.9) 
+                result.innerHTML = 
+                    `정상체중 : <span>${bmi}</span>`;
+    
+            else result.innerHTML =
+                `과체중 : <span>${bmi}</span>`;
+        }
+    };
+// bmi end
+// 버튼 색 바꾸기
+    var btnContainera = document.getElementById("cb2");
+    var btnsa = btnContainera.getElementsByClassName("c2");
+    for (var i = 0; i < btnsa.length; i++) {
+    btnsa[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("activea");
+        if (current.length > 0) {
+        current[0].className = current[0].className.replace(" activea", "");
+        }
+        this.className += " activea";
+    });
+    }
+    // =====================누가 먹는가====================
+    var btnContainerb = document.getElementById("cb1");
+    var btnsb = btnContainerb.getElementsByClassName("c1");
+    for (var i = 0; i < btnsb.length; i++) {
+    btnsb[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("activeb");
+        if (current.length > 0) {
+        current[0].className = current[0].className.replace(" activeb", "");
+        }
+        this.className += " activeb";
+    });
+    }
+    // =====================성별==========================
+    var btnContainerb = document.getElementById("cb1");
+    var btnsb = btnContainerb.getElementsByClassName("c1");
+    for (var i = 0; i < btnsb.length; i++) {
+    btnsb[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("activeb");
+        if (current.length > 0) {
+        current[0].className = current[0].className.replace(" activeb", "");
+        }
+        this.className += " activeb";
+    });
+    }
+    // ===============================================
+    var btnContainerc = document.getElementById("cb3");
+    var btnsc = btnContainerc.getElementsByClassName("c3");
+    for (var i = 0; i < btnsc.length; i++) {
+    btnsc[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("activec");
+        if (current.length > 0) {
+        current[0].className = current[0].className.replace(" activec", "");
+        }
+        this.className += " activec";
+    });
+    }
+    // ===============================================
+    var btnContainerd = document.getElementById("cb4");
+    var btnsd = btnContainerd.getElementsByClassName("c4");
+    for (var i = 0; i < btnsd.length; i++) {
+    btnsd[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("actived");
+        if (current.length > 0) {
+        current[0].className = current[0].className.replace(" actived", "");
+        }
+        this.className += " actived";
+    });
+    }
+    // ===============================================
+    var btnContainere = document.getElementById("cb5");
+    var btnse = btnContainere.getElementsByClassName("c5");
+    for (var i = 0; i < btnse.length; i++) {
+    btnse[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("activee");
+        if (current.length > 0) {
+        current[0].className = current[0].className.replace(" activee", "");
+        }
+        this.className += " activee";
+    });
+    }
+    // ===============================================
+    var btnContainerf = document.getElementById("cb6");
+    var btnsf = btnContainerf.getElementsByClassName("c6");
+    for (var i = 0; i < btnsf.length; i++) {
+    btnsf[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("activef");
+        if (current.length > 0) {
+        current[0].className = current[0].className.replace(" activef", "");
+        }
+        this.className += " activef";
+    });
+    }
+    // ===============================================
+    // 버튼 색 끝
+    </script>
+</body>
+</html>
