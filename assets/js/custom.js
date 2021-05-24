@@ -77,7 +77,13 @@ $("#title").click(function(){
         }
     });
 })();
-
+function goback() {
+    if(num>=1) {
+        const prevBtn = document.getElementById("question_prev");
+        prevBtn.style.backgroundColor = "#215843";
+        prevBtn.style.color = "#fff";
+    }
+}
 function next(){
     if(num==7){
         $(".question").hide();
@@ -154,56 +160,24 @@ function A()  {
     target.style.background='#215844';
     target.style.color='#fff';
     target.disabled = false;
-    if (typeof(Storage) !== "undefined") {
-        if (localStorage.clickcount) {
-          localStorage.clickcount = Number(localStorage.clickcount)+1;
-        } else {
-          localStorage.clickcount = 1;
-        }
-        document.getElementById("Ai").innerHTML = localStorage.clickcount;
-      }
 }
 function B()  {
     const target = document.getElementById('question_next');
     target.disabled = false;
     target.style.background='#215844';
     target.style.color='#fff';
-    if (typeof(Storage) !== "undefined") {
-        if (localStorage.clickcount) {
-          localStorage.clickcount = Number(localStorage.clickcount)+1;
-        } else {
-          localStorage.clickcount = 1;
-        }
-        document.getElementById("Bi").innerHTML = localStorage.clickcount;
-      }
 }
 function C()  {
     const target = document.getElementById('question_next');
     target.style.background='#215844';
     target.style.color='#fff';
     target.disabled = false;
-    if (typeof(Storage) !== "undefined") {
-        if (localStorage.clickcount) {
-          localStorage.clickcount = Number(localStorage.clickcount)+1;
-        } else {
-          localStorage.clickcount = 1;
-        }
-        document.getElementById("Ci").innerHTML = localStorage.clickcount;
-      }
 }
 function D()  {
     const target = document.getElementById('question_next');
     target.disabled = false;
     target.style.background='#215844';
     target.style.color='#fff';
-    if (typeof(Storage) !== "undefined") {
-        if (localStorage.clickcount) {
-          localStorage.clickcount = Number(localStorage.clickcount)+1;
-        } else {
-          localStorage.clickcount = 1;
-        }
-        document.getElementById("Di").innerHTML = localStorage.clickcount;
-      }
 }
 
 var btnContainerb = document.getElementById("cb1");

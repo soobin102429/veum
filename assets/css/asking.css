@@ -997,28 +997,25 @@ custom html end
   padding:  60px 0 0 0;
   margin-top: 30px;
 }
-#last-earth h1{
-  line-height: 7rem;
-  font-size: 4.5rem;
+#last-earth h1 {
+  letter-spacing: 2px;
+  line-height: 4rem;
+  font-size: 3.5rem;
   color: #fff;
-  font-weight: 500;
+  font-weight: 600;
 }
 #last-earth .pd{
   padding-top: 50px;
 }
-#last-earth h2{
+#last-earth h2 {
   color: #ffff;
-  font-size: 1.8rem;
-  line-height: 3rem;
-  font-weight: 400;
-  letter-spacing: 1px;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  font-weight: 300;
+  letter-spacing: -0.5px;
 }
 #last-earth .m-br{
   display: none;
-}
-#last-earth .dot{
-  color: #3c9a7b;
-  font-size: 6rem;
 }
 #last-earth .main-color{
   color: #3c9a7b;
@@ -1044,6 +1041,24 @@ custom html end
   color: #535353;
   letter-spacing: -2px;
 }
+#earth .earth-title {
+  color: #fff;
+  font-weight: 500;
+  font-size: 25px;
+  padding: 1px 10px;
+  border-radius: 4px;
+  background: #215844;
+  display: inline-block;
+  margin: 10px;
+}
+#earth .earth-title-ex{
+  color: #666;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+#earth .text-wrap{
+  padding: 50px 0;
+}
 #earth .earth-img-bg{
   width: 100%;
 }
@@ -1054,6 +1069,16 @@ custom html end
     margin-top: 0;
   }
   #last-earth h1 {
+    letter-spacing: 2px;
+    line-height: 3rem;
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: 600;
+}
+#last-earth h1:last-child{
+  margin-bottom: 15px;
+}
+  /* #last-earth h1 {
     line-height: 3rem;
     font-size: 2.3rem;
     color: #fff;
@@ -1074,8 +1099,30 @@ custom html end
     line-height: 25px;
     padding-top: 50px;
     padding-bottom: 30px;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.5px; */
+#earth h2 {
+  font-size: 17px;
+  line-height: 25px;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  letter-spacing: 0.5px;
 }
+#earth .earth-title {
+  color: #fff;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 6px 8px;
+  border-radius: 4px;
+  background: #215844;
+  display: inline-block;
+  margin: 10px;
+}
+#earth .earth-title-ex {
+  color: #666;
+  font-size: 13px;
+  font-weight: 300;
+}
+
 #earth .earth-bg{
   text-align: center;
   width: 95%;
@@ -1092,7 +1139,38 @@ custom html end
     display: block;
   }
 }
-
+@media(max-width:441px){
+  #earth h2 {
+    font-size: 14px;
+  }
+  #earth .earth-title {
+    font-size: 14px;
+    padding: 5px 7px;
+  }
+  #earth .earth-title-ex {
+    font-size: 11px;
+  }
+}
+@media(max-width:321px){
+  #last-earth h1 {
+    line-height: 2.7rem;
+    font-size: 2.3rem;
+}
+#last-earth h2 {
+  font-size: 1rem;
+  line-height: 1.2rem;
+}
+  #earth h2 {
+    font-size: 12px;
+}
+  #earth .earth-title {
+    font-size: 12px;
+    padding: 2px 6px;
+}
+  #earth .earth-title-ex {
+    font-size: 11px;
+  }
+}
 @media (max-width:281){
   #last-earth{
     padding:  110px 0 0 0;
