@@ -1412,12 +1412,100 @@ Environment html end
 Menu Start
 ---------------------------------------------------------------
  */
-#menu{
-  padding-top: 100px;
+#portfolio{
+  padding-top: 150px;
+}
+#portfolio .section-header h1{
+  color: #000;
+  letter-spacing: -1px;
+}
+/* #portfolio .line{
+  content: "";
+  background: #e0e0e0;
+  width: 100%;
+  height: 1px;
+} */
+#portfolio .img-fluid{
+  width: 100%;
+}
+.portfolio .g-txt{
+  color: #606060;
+  font-weight: 300;
+}
+.portfolio .e-txt{
+  color: #e0e0e0;
+  font-size: 10px;
+  font-weight: 300;
+}
+.portfolio .b-txt{
+  color: #000;
+  font-weight: 500;
+}
+.portfolio .gr-txt{
+  color: #215844;
+}
+.portfolio .f-13{
+  font-size: 13px;
+}
+.portfolio ul{
+  margin-bottom: 0;
+}
+.portfolio ul li{
+  margin-right: 10px;
+}
+.portfolio ul li:last-child{
+  margin-right: 0;
+}
+/* --------- text-wrap -------------- */
+.portfolio #portfolio-flters {
+  padding: 0;
+  margin: 0 auto 25px auto;
+  list-style: none;
+  text-align: center;
+  background: white;
+  border-radius: 50px;
+  padding: 2px 15px;
+}
+
+.portfolio #portfolio-flters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 8px 20px 10px 20px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1;
+  color: #444444;
+  margin: 0 4px 8px 4px;
+  transition: 0.3s;
+  border-radius: 50px;
+  border: 1px solid #fff;
+}
+.portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
+  color: #215644;
+  border-color: #215644;
+}
+.portfolio #portfolio-flters li:last-child {
+  margin-right: 0;
+}
+.portfolio .img-wrap{
+  display: block;
+  border-radius: 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 100%;
+}
+.portfolio img{
+  transition: 0.5s;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.portfolio img:hover{
+  transform: scale(1.2);
+  cursor: pointer;
 }
   /* 
 --------------------------------------------------------------
-Menu html Start 
+Menu html End 
 ---------------------------------------------------------------
  */
 
