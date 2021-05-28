@@ -749,10 +749,7 @@ custom html Start
   display: none;
 }
 /* result */
-#customized #explain{
-  font-size: 15px;
-}
-#customized .title,#animal{
+#customized .title{
   font-family: 'Noto Sans KR', sans-serif;
   font-weight: 700;
 }
@@ -776,21 +773,46 @@ custom html Start
 #customized #mbti-name{
   color: #000;
 }
-#customized .output-wrap{
-    margin: 80px auto 0;
-    background: #524641;
-    padding: 40px;
-    font-size: 20px;
-    font-weight: 500;
-    color: #fff;
+#customized .output-wrap {
+  margin: 35px auto 0;
+  padding: 30px 30px 0;
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  max-width: 885px;
 }
-@media(max-width: 709px){
-  .custom-navbar-pc{
-    display: none;
-  }
-  .custom-navbar-mobile{
-    display: block !important;
-  }
+#customized .result-output{
+  max-width: 1000px;
+}
+#customized .recommand{
+  text-align: left;
+  background: #f0f0f0;
+  padding: 50px;
+}
+#customized #animal{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 700;
+  color: #2c755e;
+}
+#customized .rec-tit{
+  font-weight: 600;
+  font-size: 20px;
+}
+#customized .e-ex{
+  color: #000;
+  font-size: 17px;
+  font-weight: 500;
+}
+#customized .e-tit{
+  color: #777;
+  font-size: 14px;
+  font-weight: 300;
+}
+#customized .button-redirect{
+    line-height: 53px;
+    width: 23%;
+    border-radius: 4px;
+    border: none;
 }
 @media(max-width: 769px){
   #customized h4 {
@@ -823,7 +845,19 @@ custom html Start
   font-size: 1rem;
 }
   /* 1 */
+  #customized .output-wrap {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    max-width: 885px;
+  }
   /* 2 */
+  .custom-navbar-pc{
+    display: none;
+  }
+  .custom-navbar-mobile{
+    display: block !important;
+  }
   /* 3 */
 }
 @media(max-width:541px){
@@ -865,6 +899,12 @@ custom html Start
    /* main */
   /* 1 */
   /* 2 */
+  #customized .button-redirect{
+    line-height: 53px;
+    width: 40%;
+    border-radius: 4px;
+    border: none;
+}
   /* 3 */
 }
 @media(max-width:441px){
@@ -905,9 +945,14 @@ custom html Start
   line-height: 22px;
 }
 #customized .line-height-btn1 {
-  line-height: 27px;
-  width: 30%;
-  font-size: 14px;
+  line-height: 50px;
+  width: 65%;
+  font-size: 15px;
+}
+#customized .line-height-btn2 {
+  line-height: 50px;
+  background-color: #215644;
+  width: 49%;
 }
   /* main */
   #customized .custom-steps-m {

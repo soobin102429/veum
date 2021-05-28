@@ -281,12 +281,10 @@
             <div class="progress mt-5">
                 <div class="progress-bar" role="progressbar" style="width: calc(100/12*1%)" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
-            <h2 class="text-center mt-5 font2" id="title">정확한 분석을 위해 <br>당신의 성별을 선택해주세요!</h2>
-            <input type="hidden" value="0" id="ABCD">
-            <button id="A" type="button" class="btn  btn-dark mt-5 font line-height-btn" onclick="A();">여자</button>
-            <button id="B" type="button" class="btn  btn-dark mt-5 font line-height-btn" onclick="B();">남자</button>
-            <button id="C" type="button" class="btn  btn-dark mt-5 font line-height-btn" onclick="C();">돼지</button>
-            <button id="D" type="button" class="btn  btn-dark mt-5 font line-height-btn" onclick="D();">공주</button>
+            <h2 class="text-center mt-5 font2" id="title">식사를 매일 규칙적으로 하나요?</h2>
+            <input type="hidden" value="0" id="EI">
+            <button id="A" type="button" class="btn  btn-dark mt-5 font line-height-btn" onclick="A();">예</button>
+            <button id="B" type="button" class="btn  btn-dark mt-5 font line-height-btn" onclick="B();">아니요</button>
             <button type="button" id="question_prev" class="mx-auto btn btn-dark2 mt-5 font line-height-btn2" onclick="prev()">이전</button>
             <button type="button" id="question_next" class="mx-auto btn btn-dark1 mt-5 font line-height-btn2" disabled>다음</button>
             </div>
@@ -295,72 +293,85 @@
           <div class="custom-title text-center mb-5 mt-5">
             <h2 id="output2"></h2>
             <div class="container">
+              <nav id="custom-navbar-pc" class="custom-navbar-pc mx-auto pt-5">
+                <div class="custom-header d-flex align-items-center justify-content-center" id="cb7">
+                    <div class="custom-steps-wrap">
+                        <span class="custom-steps custom-steps-1 custom-steps-active">1</span>
+                        <span class="custom-span custom-span-1 main-color">기본정보</span>
+                    </div>
+                    <div class="custom-steps-connect"></div>
+    
+                    <div class="custom-steps-wrap">
+                        <span class="custom-steps custom-steps-2">2</span>
+                        <span class="custom-span custom-span-2">생활습관</span>
+                    </div>
+    
+                    <div class="custom-steps-connect"></div>
+    
+                    <div class="custom-steps-wrap">
+                        <span class="custom-steps custom-steps-3">3</span>
+                        <span class="custom-span custom-span-3">진단결과</span>
+                    </div>
+                </div>
+            </nav><!-- .navbar -->
+            <nav id="custom-navbar-mobile" class="custom-navbar-mobile mx-auto pt-5">
+                <div class="custom-header d-flex align-items-center justify-content-center">
+                    <div class="custom-steps-wrap-m">
+                        <span class="custom-steps-m custom-steps-1-m custom-steps-active-m">1</span>
+                    </div>
+                    <div class="custom-steps-connect-m"></div>
+    
+                    <div class="custom-steps-wrap-m">
+                        <span class="custom-steps-m custom-steps-2-m">2</span>
+                    </div>
+    
+                    <div class="custom-steps-connect-m"></div>
+    
+                    <div class="custom-steps-wrap-m">
+                        <span class="custom-steps-m custom-steps-3-m">3</span>
+                    </div>
+                </div>
+            </nav><!-- .navbar -->
               <div class="row">
-                <div class="col-12">
+                <div class="col-12 mx-auto result-ouput">
                   <ul class="list-unstyled d-flex align-items-center justify-content-evenly output-wrap">
                     <li id="output3"></li>
-                    <li>|</li>
+                    <li class="">|</li>
                     <li id="output1"></li>
-                    <li>|</li>
+                    <li class="">|</li>
                     <li id="bmi"></li>
                   </ul>
                 </div>
               </div>
             </div>
-          <nav id="custom-navbar-pc" class="custom-navbar-pc mx-auto">
-              <div class="custom-header d-flex align-items-center justify-content-center" id="cb7">
-                  <div class="custom-steps-wrap">
-                      <span class="custom-steps custom-steps-1 custom-steps-active">1</span>
-                      <span class="custom-span custom-span-1 main-color">기본정보</span>
-                  </div>
-                  <div class="custom-steps-connect"></div>
-  
-                  <div class="custom-steps-wrap">
-                      <span class="custom-steps custom-steps-2">2</span>
-                      <span class="custom-span custom-span-2">생활습관</span>
-                  </div>
-  
-                  <div class="custom-steps-connect"></div>
-  
-                  <div class="custom-steps-wrap">
-                      <span class="custom-steps custom-steps-3">3</span>
-                      <span class="custom-span custom-span-3">진단결과</span>
-                  </div>
-              </div>
-          </nav><!-- .navbar -->
-          <nav id="custom-navbar-mobile" class="custom-navbar-mobile mx-auto">
-              <div class="custom-header d-flex align-items-center justify-content-center">
-                  <div class="custom-steps-wrap-m">
-                      <span class="custom-steps-m custom-steps-1-m custom-steps-active-m">1</span>
-                  </div>
-                  <div class="custom-steps-connect-m"></div>
-  
-                  <div class="custom-steps-wrap-m">
-                      <span class="custom-steps-m custom-steps-2-m">2</span>
-                  </div>
-  
-                  <div class="custom-steps-connect-m"></div>
-  
-                  <div class="custom-steps-wrap-m">
-                      <span class="custom-steps-m custom-steps-3-m">3</span>
-                  </div>
-              </div>
-          </nav><!-- .navbar -->
           </div>
           <!-- title end -->
           <div class="container">
-            <h2 id="animal" class="mt-5 font2">이름</h2>
-            <h2 id="mbti-name" class="mt-5 font2">mbti-name</h2>
-            <p id="explain" class="mt-5 font2">설명</p>
-            <img src="images/11.gif" alt="오버액션토끼" id="img">
-            <p id="mbti-result" class="mt-5 font">MBTI</p>
-            
+            <div class="row">
+              <div class="col-12 recommand">
+                <p class="rec-tit">설문결과 고객님께 추천 드리는 식단은 <span id="animal"></span>입니다.</p>
+                <p class="e-ex">설문결과에 따라 추천 드리는 식사 가이드</p>
+                <p class="e-ex">Point.1 <span id="explainA"></span></p>
+                <p id="explain_1" class="e-tit"></p>
+                <p class="e-ex">Point.2 <span id="explainB"></span></p>
+                <p id="explain_2" class="e-tit"></p>
+                <p class="e-ex">Point.3 <span id="explainC"></span></p>
+                <p id="explain_3" class="e-tit"></p>
+                <button type="button" class="mx-auto btn-dark button-redirect" id="button"></button>
+                
+                <h2 id="mbti-name" class="mt-5 font2">mbti-name</h2>
+                <p id="explain" class="mt-5 font2">설명</p>
+                <img src="images/11.gif" alt="오버액션토끼" id="img">
+                <p id="mbti-result" class="mt-5 font">MBTI</p>
+              </div>
+            </div>
           </div>
         </article>
-      
-        <input type="hidden" value="0" id="ABCD">
-        <!-- <input type="hidden" value="0" id="EFGH">
-        <input type="hidden" value="0" id="IGKL"> -->
+        
+        <input type="hidden" value="0" id="EI">
+        <input type="hidden" value="0" id="SN">
+        <input type="hidden" value="0" id="TF">
+        <input type="hidden" value="0" id="JP">
       </div>
     </section>
       <!-- ======= Footer ======= -->
