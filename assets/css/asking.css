@@ -808,19 +808,38 @@ custom html Start
   font-size: 14px;
   font-weight: 300;
 }
+#customized .bmi-result{
+  text-align: left;
+}
 #customized .button-redirect{
     line-height: 53px;
     width: 23%;
     border-radius: 4px;
     border: none;
+    margin: 25px 0;
+}
+#customized .shortcut {
+  color: #777;
+  line-height: 30px;
+  text-align: left;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+#customized .shortcut span{
+  color: #000;
+}
+@media(max-width:993px){
+  #customized .button-redirect {
+    width: 35%;
+}
 }
 @media(max-width: 769px){
   #customized h4 {
     font-size: 21px;
 }
-  #customized .line-height-btn1 {
-    line-height: 35px;
-    width: 20%;
+#customized .line-height-btn1 {
+  line-height: 50px;
+  width: 65%;
 }
 #customized .agree-ex {
   font-size: 12px;
@@ -836,7 +855,7 @@ custom html Start
     width: 64%;
     height: 70px;
     line-height: 70px;
-    font-size: 1rem;
+    font-size: 13px;
 }
 #customized .custom-btn-c {
   width: 32%;
@@ -858,6 +877,13 @@ custom html Start
   .custom-navbar-mobile{
     display: block !important;
   }
+  #customized .button-redirect {
+    line-height: 53px;
+    width: 50%;
+    border-radius: 4px;
+    border: none;
+    font-size: 14px;
+}
   /* 3 */
 }
 @media(max-width:541px){
@@ -886,10 +912,6 @@ custom html Start
 #customized h4 {
   font-size: 19px;
 }
-#customized .line-height-btn1 {
-  line-height: 36px;
-  width: 28%;
-}
 #customized th {
   font-size: 10px;
 }
@@ -899,11 +921,13 @@ custom html Start
    /* main */
   /* 1 */
   /* 2 */
-  #customized .button-redirect{
+  #customized .button-redirect {
     line-height: 53px;
-    width: 40%;
-    border-radius: 4px;
-    border: none;
+    width: 50%;
+    font-size: 14px;
+}
+#customized .recommand {
+  padding: 25px;
 }
   /* 3 */
 }
@@ -913,7 +937,7 @@ custom html Start
     line-height: 30px;
 }
 #customized p{
-  font-size: 12px;
+  font-size: 11px;
 }
 #customized .custom-icon {
     width: 73px;
@@ -963,6 +987,10 @@ custom html Start
 }
  /* 1 */
  /* 2 */
+ #customized .button-redirect {
+  width: 80%;
+  margin-top: 45px;
+}
  /* 3 */
 }
 @media(max-width:361px){
@@ -984,8 +1012,8 @@ custom html Start
   background-size: 0.8rem;
 }
 #customized .line-height-btn1 {
-  line-height: 25px;
-  width: 40%;
+  line-height: 40px;
+  width: 50%;
 }
   /* main */
  /* 1 */
@@ -1553,4 +1581,3 @@ Menu Start
 Menu html End 
 ---------------------------------------------------------------
  */
-

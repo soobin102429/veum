@@ -214,7 +214,7 @@
               </h5>
               <div class="custom-type-wrap d-flex justify-content-center mx-auto mb-c">
                   <input type="tel" class="custom-type reqrd" name="cm" placeholder="예: 165" maxlength="3" id ="height">
-                  <span class="custom-q-dt">m</span>
+                  <span class="custom-q-dt">cm</span>
               </div>
               <div class="clearfix"></div>
               <div class="custom-type-wrap d-flex justify-content-center mx-auto mb-c">
@@ -279,7 +279,7 @@
           <!-- title end -->
             <div class="container text-center">
             <div class="progress mt-5">
-                <div class="progress-bar" role="progressbar" style="width: calc(100/12*1%)" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" style="width: calc(100/7*1%)" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
             <h2 class="text-center mt-5 font2" id="title">식사를 매일 규칙적으로 하나요?</h2>
             <input type="hidden" value="0" id="EI">
@@ -348,6 +348,13 @@
           <!-- title end -->
           <div class="container">
             <div class="row">
+              <div class="col-12 bmi-result">
+                <p class="e-ex">현재 BMI(체질량지수)는 <span id="bmi" class="e-ex"></span>로 비만 범위에 있습니다.</p>
+                <p class="e-tit">
+                  ※ BMI(체질량지수)는 비만도를 간접적으로 평가하기 위한 지수로 키와 체중을 이용하여 계산합니다. (저체중: ~18.5 / 정상체중: 18.5~22.9 / 과체중: 23.0~24.9 / 비만: 25이상)
+                  <br>* 키와 체중만으로 계산하기 때문에 근육량에 따라 BMI가 높거나 낮게 추정될 수 있습니다.
+                </p>
+              </div>
               <div class="col-12 recommand">
                 <p class="rec-tit">설문결과 고객님께 추천 드리는 식단은 <span id="animal"></span>입니다.</p>
                 <p class="e-ex">설문결과에 따라 추천 드리는 식사 가이드</p>
@@ -359,10 +366,13 @@
                 <p id="explain_3" class="e-tit"></p>
                 <button type="button" class="mx-auto btn-dark button-redirect" id="button"></button>
                 
-                <h2 id="mbti-name" class="mt-5 font2">mbti-name</h2>
-                <p id="explain" class="mt-5 font2">설명</p>
-                <img src="images/11.gif" alt="오버액션토끼" id="img">
-                <p id="mbti-result" class="mt-5 font">MBTI</p>
+                <!-- onclick="window.location.href='customized-detail.html';" -->
+              </div>
+              <div class="col-12">
+                <div class="shortcut">
+                  <p>고객님의 설문결과는<span>마이페이지</span>><span>설문관리</span></a>에서 확인하실 수 있습니다.<br>보다 전문적인 진단을 원하실 경우 프리미엄 서비스를 이용하시면 됩니다.</p>
+                </div>
+                <button onClick="window.location.reload();" class="btn btn-dark mx-auto line-height-btn1">다시 진단하기</button>
               </div>
             </div>
           </div>
